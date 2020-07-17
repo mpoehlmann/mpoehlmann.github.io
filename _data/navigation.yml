@@ -1,0 +1,21 @@
+nav:
+  - title: "about."
+    section: about
+
+  - title: "research."
+    section: research
+    
+  - title: "outreach."
+    section: outreach
+
+  - title: "beyond physics."
+    section: beyondphysics
+  
+  - title: "cv."
+    section: cv
+  
+  - title: "contact."
+    section: contact
+
+  # - title: "Theme Source"
+    # url: https://github.com/raviriley/agency-jekyll-theme/

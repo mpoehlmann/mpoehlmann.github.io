@@ -1,0 +1,41 @@
+header:
+  title: Welcome to my website!
+  text: Michael Poehlmann
+  button: ABOUT ME
+  buttonlink: "#about"
+
+about:
+  title: "about."
+  text: "Text goes here"
+  section: about
+  
+research:
+  title: "research."
+  text: "Text goes here"
+  section: research
+  
+outreach:
+  title: "outreach."
+  text: "Text goes here"
+  section: outreach
+
+beyondphysics:
+  title: "beyond physics."
+  text: "Text goes here"
+  section: beyondphysics
+
+cv:
+  title: "cv."
+  text: "Text goes here"
+  section: cv
+  
+contact:
+  title: "contact."
+  text: "Text goes here"
+  section: contact
+
+footer:
+  legal: "privacy policy."
+  social:
+    - url: https://github.com/mpoehlmann
+      icon: "fab fa-github"
