@@ -11,12 +11,12 @@
       </a>
       
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
+        MENU
         <i class="fas fa-bars"></i>
       </button>
       
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav text-uppercase ml-auto">
+        <ul class="navbar-nav ml-auto"> <!-- text-uppercase -->
           {%- for link in site.data.navigation.nav -%}
             <li class="nav-item">
               {%- if link.url -%}
@@ -41,15 +41,33 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
+        
+        {% comment %}
         {%- if site.data.sitetext.header.title -%}
           <div class="intro-lead-in">{{ site.data.sitetext.header.title | markdownify }}</div>
         {%- endif -%}
         {%- if site.data.sitetext.header.text -%}
-          <div class="intro-heading text-uppercase">{{ site.data.sitetext.header.text | markdownify }}</div>
+          <div class="intro-heading">{{ site.data.sitetext.header.text | markdownify }}</div> <!-- text-uppercase -->
         {%- endif -%}
         {%- if site.data.sitetext.header.button -%}
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="{{ site.data.sitetext.header.buttonlink }}">{{ site.data.sitetext.header.button }}</a>
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{ site.data.sitetext.header.buttonlink }}"> <!-- text-uppercase -->
+            {{ site.data.sitetext.header.button }}
+          </a>
         {%- endif -%}
+        {% endcomment %}
+        
+        {%- if site.data.sitetext.header.title -%}
+          <div class="intro-heading">{{ site.data.sitetext.header.title | markdownify }}</div>
+        {%- endif -%}
+        {%- if site.data.sitetext.header.text -%}
+          <div class="intro-lead-in">{{ site.data.sitetext.header.text | markdownify }}</div> <!-- text-uppercase -->
+        {%- endif -%}
+        {%- if site.data.sitetext.header.button -%}
+          <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{ site.data.sitetext.header.buttonlink }}"> <!-- text-uppercase -->
+            {{ site.data.sitetext.header.button }}
+          </a>
+        {%- endif -%}
+        
       </div>
     </div>
   </header>

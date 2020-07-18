@@ -1,7 +1,12 @@
 # Color Customization
-highlight: "#54bfff"
-white: "#FF0000"
-black: "#000"
+primary:   "#567a94" # light blue 7495ad
+secondary: "#b0a296" # tan
+tertiary:  "#567a94" # dark blue
+
+black:      "#000"
+dark-gray:  "#5d5c61"
+light-gray: "#938e94"
+white:      "#ffffff"
 
 # Image Customization
 header-image: "../img/header.jpg"

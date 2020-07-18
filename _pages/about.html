@@ -1,17 +1,28 @@
 <!-- About -->
+
 <section class="page-section" id="{{ site.data.sitetext.about.section }}">
-  <div class="container">
+  <div class="container-fluid">
     
-    <div class="row">
-      <div class="text-center">
-        <h2 class="section-heading">{{ site.data.sitetext.about.title }}</h2>
-        <h3 class="section-subheading text-muted">{{ site.data.sitetext.about.text }}</h3>
+    <h2 class="section-heading text-center">{{ site.data.sitetext.about.title }}</h2>
+    
+    <h3 class="section-subheading text-center">
+I'm passionate about research and driven by curiosity.
+    </h3>
+    
+    <div class="row mx-auto flex-nowrap">
+      <div class="col-7 p-4 m-0 section-bg-secondary-light">
+        <p>
+My full name is David-Michael Poehlmann, but I go by Michael.
+I am a PhD student at the University of California, Davis studying high energy experimental physics.
+I work with <a href="http://pantic.physics.ucdavis.edu">Emilija Pantic</a> on liquid argon-based rare event searches.
+Specifically, I am a member of the <a href="http://darkside.lngs.infn.it">DarkSide Collaboration</a> specialing in simulations and data analysis, working towards the discovery of dark matter.
+        </p>
+        <p>
+
+        </p>
       </div>
-    </div>
-  
-    <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <div class="large text-muted">{{ site.data.sitetext.about.text | markdownify }}</div>
+      <div class="col-md-5 my-auto profile-img">
+        <img class="img-fluid rounded-circle" src="../assets/img/profile.jpg" alt="">
       </div>
     </div>
     
