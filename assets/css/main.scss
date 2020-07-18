@@ -10,19 +10,19 @@
 
 // Custom colors
 $primary: {{ site.data.style.primary | default: "#fed136" }} !default;
-$primary-bg: fade-out($primary, 0.7);
+$primary-bg: lighten($primary, 27%);
 
 $secondary: {{ site.data.style.secondary | default: "#fed136" }} !default;
-$secondary-bg: fade-out($secondary, 0.7);
+$secondary-bg: lighten($secondary, 27%);
 
 $tertiary: {{ site.data.style.tertiary | default: "#fed136" }} !default;
-$tertiary-bg: fade-out($tertiary, 0.7);
+$tertiary-bg: lighten($tertiary, 25%);
 
 $dark-gray: {{ site.data.style.dark-gray | default: "#000" }} !default;
-$dark-gray-bg: fade-out($dark-gray, 0.7);
+$dark-gray-bg: lighten($dark-gray, 25%);
 
 $light-gray: {{ site.data.style.light-gray | default: "#fff" }} !default;
-$light-gray-bg: fade-out($light-gray, 0.7);
+$light-gray-bg: lighten($light-gray, 25%);
 
 $black: {{ site.data.style.black | default: "#000" }} !default;
 $white: {{ site.data.style.white | default: "#fff" }} !default;

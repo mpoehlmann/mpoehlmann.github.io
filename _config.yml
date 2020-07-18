@@ -7,7 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Meta settings
-email: poehlmann@ucdavis.edu
+email: dm.poehlmann@gmail.com # poehlmann@ucdavis.edu
 author: Michael Poehlmann
 logo: # Optional, defaults to site title
   # path: assets\img\clients\creative-market.jpg

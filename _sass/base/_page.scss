@@ -50,24 +50,6 @@ h6 {
     // @include serif-font;
     @include heading-font;
   }
-  h4.regular-text-light {
-    color: $white;
-    font-size: 20px;
-    font-weight: 400;
-    // margin-bottom: 30px;
-    text-transform: none;
-    margin: 0;
-    @include body-font;
-  }
-  h4.regular-text-dark {
-    color: $dark-gray;
-    font-size: 20px;
-    font-weight: 400;
-    // margin-bottom: 30px;
-    text-transform: none;
-    margin: 0;
-    @include body-font;
-  }
 }
 @media(min-width:768px) {
   section {
