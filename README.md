@@ -14,16 +14,8 @@ bundle exec jekyll serve
 ```
 
 ## Adding pages
-- 
 - add to ``navigation.yml``, match section name in ``sitetext.yml``
-
-
-
-### Structure
-
-
-
-### Page
+- TODO: need to finish
 
 
 
