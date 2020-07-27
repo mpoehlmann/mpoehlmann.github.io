@@ -39,10 +39,19 @@ h6 {
     margin-top: 0;
     margin-bottom: 15px;
   }
-  h3.section-subheading {
+  // h3.section-subheading {
+  //   color: $tertiary; //$dark-gray;
+  //   font-size: 24px;
+  //   // font-size: 16px;
+  //   font-weight: 400;
+  //   font-style: italic;
+  //   margin-bottom: 30px; //75px;
+  //   text-transform: none;
+  //   // @include serif-font;
+  //   @include heading-font;
+  // }
+  .section-subheading {
     color: $tertiary; //$dark-gray;
-    font-size: 24px;
-    // font-size: 16px;
     font-weight: 400;
     font-style: italic;
     margin-bottom: 30px; //75px;
@@ -54,6 +63,12 @@ h6 {
 @media(min-width:768px) {
   section {
     padding: 150px 0;
+  }
+}
+
+h3,h4,h5 {
+  .body-heading {
+    @include body-font;
   }
 }
 
@@ -74,4 +89,10 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+
+.img-caption {
+  margin-top: 10px;
+  font-size: 14px;
 }

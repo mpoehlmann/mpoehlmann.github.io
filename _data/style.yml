@@ -12,5 +12,5 @@ white:      "#ffffff"
 header-image: "../img/header.jpg"
 contact-image: "../img/contact.png"
 
-# Font Awesome icon for portfolio grid when an item is hovered over
-portfolio-icon: fas fa-expand-arrows-alt fa-3x # Default: fas fa-plus fa-3x
+# Font Awesome icon for subpage grid when an item is hovered over
+# subpage-icon: fas fa-expand-arrows-alt fa-3x # Default: fas fa-plus fa-3x

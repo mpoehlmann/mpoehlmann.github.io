@@ -10,7 +10,8 @@
 
 // Custom colors
 $primary: {{ site.data.style.primary | default: "#fed136" }} !default;
-$primary-bg: lighten($primary, 27%);
+// $primary-bg: lighten($primary, 35%);
+$primary-bg: lighten($primary, 25%);
 
 $secondary: {{ site.data.style.secondary | default: "#fed136" }} !default;
 $secondary-bg: lighten($secondary, 27%);
@@ -44,7 +45,8 @@ $header-image: "{{ site.data.style.header-image }}";
 
 
 // Layout
-@import "layout/masthead.scss";
 @import "layout/footer.scss";
-@import "layout/section.scss";
 @import "layout/image.scss";
+@import "layout/masthead.scss";
+@import "layout/section.scss";
+@import "layout/subpage.scss";

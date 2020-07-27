@@ -1,0 +1,31 @@
+<!-- Portfolio Modals (TODO: separate html file for each) -->
+{% for sp in site.data.sitetext.subpages %}
+  <div class="subpage-modal modal fade" id="{{ sp.subsection }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">{{ sp.title }}</h2>
+                <p class="item-intro text-muted">{{ sp.subtitle }}</p>
+                <img class="img-fluid d-block mx-auto" src="{{ sp.image }}" alt="{{ sp.alt }}">
+        <p>{{ sp.content }}</p>    
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+<!-- End Portfolio Modals -->

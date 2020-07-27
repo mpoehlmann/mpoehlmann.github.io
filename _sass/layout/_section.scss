@@ -4,8 +4,7 @@
 }
 
 .section-bg-primary-light {
-  // color: $white;
-  background-color: $primary; //lighten($primary, 35%);
+  background-color: $primary-bg; //lighten($primary, 35%);
   // background-blend-mode: lighten;
 }
 
@@ -15,7 +14,6 @@
 }
 
 .section-bg-secondary-light {
-  // color: $white;
   background-color: $secondary-bg; //lighten($secondary, 20%);
   background-blend-mode: lighten;
 }
@@ -23,6 +21,10 @@
 .section-bg-tertiary {
   color: $white;
   background-color: $tertiary;
+}
+
+.section-bg-tertiary-light {
+  background-color: $tertiary-bg;
 }
 
 .section-bg-light-gray {

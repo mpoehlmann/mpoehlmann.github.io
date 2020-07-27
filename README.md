@@ -1,6 +1,10 @@
 # mpoehlmann.github.io
 Michael Poehlmann's personal website.
 
+Based on the theme [jekyll-theme-prologue](https://raviriley.github.io/agency-jekyll-theme-starter/).
+Credit to [https://www.orestisgeorgiou.com](https://www.orestisgeorgiou.com) for inspiration as well.
+
+
 ## Local testing
 When first downloading the code, run 
 ```bash
@@ -21,7 +25,11 @@ bundle exec jekyll serve
 
 ## TODO
 - colors in style.yml
-
+- TPC page
+- logo
+- header image
+- image carousel
+- color of buttons/other stuff when first loading page
 
 
 ## Ideas

@@ -34,4 +34,26 @@ footer:
   legal: "privacy policy."
   social:
     - url: https://github.com/mpoehlmann
-      icon: "fab fa-github"
+      icon: fab fa-github
+    - url: https://www.linkedin.com/in/michael-poehlmann-511359123/
+      icon: fab fa-linkedin-in
+      
+      
+subpages:
+  # - title: "current projects."
+  #   subtitle: "A summary of my current research projects."
+  #   section: research
+  #   subsection: currentprojects
+  #   thumbnail: "../assets/img/michael_ariser_poster.jpg"
+  
+  # - title: "previous work."
+  #   subtitle: "An overview of my past research activities."
+  #   section: research
+  #   subsection: previouswork
+  #   thumbnail: "../assets/img/michael_ariser_poster.jpg"
+    
+  # - title: "two-phase TPCs."
+  #   subtitle: "An introduction to two-phase argon time projection chambers."
+  #   # section: adfas
+  #   subsection: twophasetpc
+  #   # thumbnail: "../assets/img/michael_ariser_poster.jpg"
