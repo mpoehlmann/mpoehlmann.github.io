@@ -1,11 +1,21 @@
 # mpoehlmann.github.io
 Michael Poehlmann's personal website.
 
-Based on the theme [jekyll-theme-prologue](https://raviriley.github.io/agency-jekyll-theme-starter/).
+Based on the theme [agency-jekyll-theme-starter](https://raviriley.github.io/agency-jekyll-theme-starter/).
 Credit to [https://www.orestisgeorgiou.com](https://www.orestisgeorgiou.com) for inspiration as well.
 
 
 ## Local testing
+### Initial setup
+Install the prerequisites:
+```bash
+brew install ruby
+# To bash_profile, add: export PATH="/Users/michael/.gem/ruby/2.7.0/bin:$PATH"
+gem install --user-install bundler jekyll
+```
+
+
+### Testing
 When first downloading the code, run 
 ```bash
 bundle install
@@ -22,6 +32,18 @@ bundle exec jekyll serve
 - TODO: need to finish
 
 
+## Google Analytics
+### Event tracking
+To the hyperlink tag (``<a>``), add:
+```html
+onclick="gtag('event', 'click', {'event_category':'YourEventCategory', 'event_label':'YourEventLabel'});"
+```
+
+My event categories:
+- "download": file download from site
+- "external": outbound url link click
+- "internal": internal link click
+
 
 ## TODO
 - colors in style.yml
@@ -36,7 +58,7 @@ bundle exec jekyll serve
 - image carousel
 - color of buttons/other stuff when first loading page
 - picture outlines
-
+- ORCID id by github
 
 
 ## Ideas

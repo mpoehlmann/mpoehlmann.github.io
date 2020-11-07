@@ -37,6 +37,8 @@ footer:
       icon: fab fa-github
     - url: https://www.linkedin.com/in/michael-poehlmann-511359123/
       icon: fab fa-linkedin-in
+    - url: https://orcid.org/0000-0002-7131-8433
+      icon: fab fa-orcid
       
       
 subpages:
