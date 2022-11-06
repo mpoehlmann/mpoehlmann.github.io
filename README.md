@@ -1,85 +1,99 @@
 # mpoehlmann.github.io
+
 Michael Poehlmann's personal website.
 
-Based on the theme [agency-jekyll-theme-starter](https://raviriley.github.io/agency-jekyll-theme-starter/).
-Credit to [https://www.orestisgeorgiou.com](https://www.orestisgeorgiou.com) for inspiration as well.
+## Tutorial
 
+### Project structure
 
-## Local testing
+The minimum project structure a Jekyll-based website are:
+
+- `_includes/`
+  - `head.html`: The `<head>` section for each HTML page.
+- `_layouts/`
+  - `default.html`: The default HTML layout for a page.
+- `Gemfile`:
+- `index.md` or `index.html`: The main page of the website.
+
+The `index.md` file contains the following yaml lines at the top, which selects the file in `_layout/` to define the theme:
+
+```yaml
+---
+layout: default
+---
+```
+
+The `default.html` file contains the following lines, which includes the `head.html` file:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+
+  <div class="wrapper">
+    {{ content }}
+  </div>
+
+</body>
+</html>
+```
+
 ### Initial setup
+
 Install the prerequisites:
+
 ```bash
 brew install ruby
-# To bash_profile, add: export PATH="/Users/michael/.gem/ruby/2.7.0/bin:$PATH"
+brew --prefix ruby
+export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+# export PATH=$(gem environment gemdir)/bin:$PATH
+export PATH=/Users/michael/.gem/ruby/3.1.0/bin:$PATH
 gem install --user-install bundler jekyll
 ```
 
+### Local testing
 
-### Testing
-When first downloading the code, run 
+When first downloading the code, run
+
 ```bash
 bundle install
 ```
+
 to install the necessary gems for the project.
 
 To create a local server, run
+
 ```bash
 bundle exec jekyll serve
 ```
 
-## Adding pages
-- add to ``navigation.yml``, match section name in ``sitetext.yml``
-- TODO: need to finish
+### Website additions
 
+### Adding a new pae
 
-## Google Analytics
-### Event tracking
-To the hyperlink tag (``<a>``), add:
-```html
-onclick="gtag('event', 'click', {'event_category':'YourEventCategory', 'event_label':'YourEventLabel'});"
-```
-
-My event categories:
-- "download": file download from site
-- "external": outbound url link click
-- "internal": internal link click
+### Adding a new section to a page
 
 
 ## TODO
-- colors in style.yml
-- add subcations to DarkSide and ARIS-ER
-  - DarkSide: A hunt for 5 events over 10 years
-- sub pages to add
-  - TPC page
-  - Dark matter (technical, feyman diagram pic)
-  - Dark matter (non-technical, pool ball pic)
-- logo, favicon
-- header image
-- image carousel
-- color of buttons/other stuff when first loading page
-- picture outlines
-- ORCID id by github
+
+- [ ] Favicons
+- [ ] `tags.html`
+- [ ] `gulpfile.js`
+- [ ] Set one link to `active` in `nav.html
 
 
-## Ideas
-- add different headers for each page
+### Structure
+- [ ] `index.html`
+  - [x] `_layouts/home.html`
+    - [x] header
+  - [x] `_layouts/page.html`
+  - [ ] `_layouts/default.html`
+  - [ ] `_includes/head.html`
+  - [ ] `_includes/nav.html`
+  - [ ] `_includes/footer.html`
+
+- [ ] Tooltips
 
 
-## Google
-add after head tag
-```
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5H73CWW');</script>
-<!-- End Google Tag Manager -->
-```
-
-add after opening body tag
-```
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5H73CWW"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+## 

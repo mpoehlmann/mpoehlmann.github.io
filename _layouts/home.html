@@ -1,11 +1,34 @@
 ---
 layout: default
 ---
-{% include navheader.html %}
+{% include nav.html %}
 
-{% include_relative _pages/about.html %}
-{% include_relative _pages/research.html %}
-{% include_relative _pages/outreach.html %}
-{% include_relative _pages/beyondphysics.html %}
-{% include_relative _pages/cv.html %}
-{% include_relative _pages/contact.html %}
+<!-- Header -->
+<header class="masthead">
+  <div class="container">
+    <div class="intro-text">
+      {%- if site.data.sitetext.header.title -%}
+        <div class="intro-heading">{{ site.data.sitetext.header.title | markdownify }}</div>
+      {%- endif -%}
+      {%- if site.data.sitetext.header.text -%}
+        <div class="intro-lead-in">{{ site.data.sitetext.header.text | markdownify }}</div> <!-- text-uppercase -->
+      {%- endif -%}
+      {%- if site.data.sitetext.header.button -%}
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{ site.data.sitetext.header.buttonlink }}"> <!-- text-uppercase -->
+          {{ site.data.sitetext.header.button }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</header>
+<!-- End Header -->
+
+{% if page.background == "grey" or page.background == "gray" %}
+  <script>
+    document.getElementById("page-top").className = "bg-light";
+  </script>
+{% endif %}
+
+<div class="container" id="pagecontainer">
+  {{ content }}
+</div>

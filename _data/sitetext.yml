@@ -6,56 +6,14 @@ header:
   button: ABOUT ME
   buttonlink: "#about"
 
-about:
-  title: "about."
-  section: about
-  
-research:
-  title: "research."
-  section: research
-  
-outreach:
-  title: "outreach."
-  section: outreach
-
-beyondphysics:
-  title: "beyond physics."
-  section: beyondphysics
-
-cv:
-  title: "curriculum vitae."
-  section: cv
-  
-contact:
-  title: "contact."
-  section: contact
-
 footer:
   legal: "privacy policy."
   social:
+    - url: mailto:poehlmann@ucdavis.edu
+      icon: fas fa-envelope
     - url: https://github.com/mpoehlmann
       icon: fab fa-github
     - url: https://www.linkedin.com/in/michael-poehlmann-511359123/
       icon: fab fa-linkedin-in
     - url: https://orcid.org/0000-0002-7131-8433
       icon: fab fa-orcid
-      
-      
-subpages:
-  # - title: "current projects."
-  #   subtitle: "A summary of my current research projects."
-  #   section: research
-  #   subsection: currentprojects
-  #   thumbnail: "../assets/img/michael_ariser_poster.jpg"
-  
-  # - title: "previous work."
-  #   subtitle: "An overview of my past research activities."
-  #   section: research
-  #   subsection: previouswork
-  #   thumbnail: "../assets/img/michael_ariser_poster.jpg"
-    
-  # - title: "two-phase TPCs."
-  #   subtitle: "An introduction to two-phase argon time projection chambers."
-  #   # section: adfas
-  #   subsection: twophasetpc
-  #   # thumbnail: "../assets/img/michael_ariser_poster.jpg"

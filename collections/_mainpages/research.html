@@ -1,13 +1,18 @@
+---
+layout: page
+title: research.
+---
+
 <!-- Research -->
-<section class="page-section" id="{{ site.data.sitetext.research.section }}">
+<section class="page-section" id="{{ page.slug }}">
   <div class="container-fluid">
-    
-    <h2 class="section-heading text-center">{{ site.data.sitetext.research.title }}</h2>
-    
+
+    <h2 class="section-heading text-center">{{ page.title }}</h2>
+
     <h3 class="section-subheading text-center">
       My quest for the detection of rare events.
     </h3>
-    
+
     <div class="row mx-auto flex-nowrap">
       <div class="col-md-4 border-img">
         <img class="img-fluid" src="../assets/img/michael_ariser_poster.jpg" alt="">
@@ -15,14 +20,14 @@
           Here, I am shown presenting a poster on ARIS-ER.
         </div>
       </div>
-      
+
       <div class="col-8 p-4 m-0 section-bg-secondary-light">
-        
-        <h4 class="body-heading"> DarkSide </h4> 
+
+        <h4 class="body-heading"> DarkSide </h4>
         <p>
           The
           <a href="http://darkside.lngs.infn.it" onclick="gtag('event', 'click', {'event_category':'external', 'event_label':'http://darkside.lngs.infn.it'});">DarkSide Program</a>
-          aims at the direct detection of dark matter using 
+          aims at the direct detection of dark matter using
           <!-- <a class="subpage-link" data-toggle="modal" href="#twophasetpc">two-phase argon time projection chambers (TPCs)</a>. -->
           two-phase argon time projection chambers (TPCs).
           The upcoming phase of the DarkSide Program is DarkSide-20k, a next-generation dark matter detector at the Laboratori Nazionali del Gran Sasso in Italy.
@@ -34,25 +39,25 @@
           I also contribute to the analysis of data collected by DarkSide-50.
         </p>
         <br>
-        
-        <h4 class="body-heading"> ARIS-ER </h4> 
+
+        <h4 class="body-heading"> ARIS-ER </h4>
         <p>
           One of the most significant analysis limitations faced by DarkSide-20k is the accurate modeling of the detector's response to different classes of dark matter interactions.
           In 2017, the
-          <a href="https://arxiv.org/abs/1801.06653" onclick="gtag('event', 'click', {'event_category':'external', 'event_label':'https://arxiv.org/abs/1801.06653'});">ARIS experiment</a> 
-          measured the scintillation and ionization response of LAr to impinging neutrons of known energy. 
-          In a continuing effort to study the response of liquid argon at low energies, the proposed Argon Recoil Ionization and Scintillation from Electron Recoils (ARIS-ER) experiment will measure the response of liquid argon to monoenergetic gammas which Compton scatter in the detector. 
+          <a href="https://arxiv.org/abs/1801.06653" onclick="gtag('event', 'click', {'event_category':'external', 'event_label':'https://arxiv.org/abs/1801.06653'});">ARIS experiment</a>
+          measured the scintillation and ionization response of LAr to impinging neutrons of known energy.
+          In a continuing effort to study the response of liquid argon at low energies, the proposed Argon Recoil Ionization and Scintillation from Electron Recoils (ARIS-ER) experiment will measure the response of liquid argon to monoenergetic gammas which Compton scatter in the detector.
           ARIS-ER will take place at UC Davis and begin taking data in 2021.
         </p>
         <p>
           For ARIS-ER, I am involved in the experimental design, data acquisition (DAQ) system development, hardware development, and detector commissioning.
           Once data is taken, I will also be involved in the ARIS-ER analysis.
         </p>
-        
+
       </div>
     </div>
-    
-    
+
+
     {% comment %}
     <!-- Research Grid -->
     <div class="row justify-content-around" style="margin-top:20px;">
@@ -60,7 +65,7 @@
         {% if sp.section != "research" %}
           {% continue %}
         {% endif %}
-      
+
         <div class="col-md-4 col-sm-6 subpage-item">
           <a class="subpage-link" data-toggle="modal" href="#{{ sp.subsection }}">
             <div class="subpage-hover">
@@ -80,8 +85,8 @@
     <!-- End Research Grid -->
     {% endcomment %}
 
-    
+
   </div>
 </section>
-{% include_relative _pages/modals.html %}
+{%- comment -%} {% include_relative _pages/modals.html %} {%- endcomment -%}
 <!-- End Research -->
