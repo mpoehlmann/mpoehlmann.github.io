@@ -10,6 +10,7 @@ p {
 
 a {
   color: $tertiary;
+
   &:hover {
     color: darken($primary, 10%);
   }
@@ -31,6 +32,7 @@ h6 {
 
 .page-section {
   padding: 50px 0; // padding: 100px 0;
+
   h2.section-heading {
     // color: $dark-gray;
     color: $black;
@@ -39,6 +41,7 @@ h6 {
     margin-top: 0;
     margin-bottom: 15px;
   }
+
   // h3.section-subheading {
   //   color: $tertiary; //$dark-gray;
   //   font-size: 24px;
@@ -60,13 +63,16 @@ h6 {
     @include heading-font;
   }
 }
+
 @media(min-width:768px) {
   section {
     padding: 150px 0;
   }
 }
 
-h3,h4,h5 {
+h3,
+h4,
+h5 {
   .body-heading {
     @include body-font;
   }
@@ -95,4 +101,48 @@ img::-moz-selection {
 .img-caption {
   margin-top: 10px;
   font-size: 14px;
+}
+
+// Section styling
+.section-bg-primary {
+  color: $white;
+  background-color: $primary;
+}
+
+.section-bg-primary-light {
+  background-color: $primary-bg; //lighten($primary, 35%);
+  // background-blend-mode: lighten;
+}
+
+.section-bg-secondary {
+  color: $white;
+  background-color: $secondary;
+}
+
+.section-bg-secondary-light {
+  background-color: $secondary-bg; //lighten($secondary, 20%);
+  background-blend-mode: lighten;
+}
+
+.section-bg-tertiary {
+  color: $white;
+  background-color: $tertiary;
+}
+
+.section-bg-tertiary-light {
+  background-color: $tertiary-bg;
+}
+
+.section-bg-light-gray {
+  color: $white;
+  background-color: lighten($light-gray, 35%);
+}
+
+.white-link {
+  color: $white;
+
+  &:hover {
+    color: $white;
+    text-decoration: underline;
+  }
 }

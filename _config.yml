@@ -13,6 +13,8 @@ author: Michael Poehlmann
 logo: # Optional, defaults to site title
   # path: assets\img\clients\creative-market.jpg
   # height: 60 # Height in px, defaults to 52px
+header-img: "../img/header.jpg"
+contact-img: "../img/contact.png"
 
 analytics:
   google: 'UA-172415369-1' # Google Analytics tracking code here

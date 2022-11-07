@@ -3,10 +3,22 @@
 @charset "utf-8";
 
 
-// Core variables and mixins
-@import "base/variables.scss";
-@import "base/mixins.scss";
+// Font Mixins
+@mixin serif-font {
+  font-family: "Lora", serif; //Lato
+}
 
+@mixin script-font {
+  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+@mixin body-font {
+  font-family: "Lora", sans-serif;
+}
+
+@mixin heading-font {
+  font-family: "Lato", sans-serif;
+}
 
 // Custom colors
 $primary: {{ site.data.style.primary | default: "#fed136" }} !default;
@@ -27,26 +39,24 @@ $light-gray-bg: lighten($light-gray, 25%);
 
 $black: {{ site.data.style.black | default: "#000" }} !default;
 $white: {{ site.data.style.white | default: "#fff" }} !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
 
+// Import image variables to allow for specific styling
+$header-img: "{{ site.header-img }}";
 
-// Custom Images
-$header-image: "{{ site.data.style.header-image }}";
-// $contact-image: "{{ site.data.style.contact-image }}";
-
-
-// Global CSS
-@import "base/page.scss";
-
-
-// Components
-@import "components/buttons.scss";
-@import "components/navbar.scss";
-@import "components/client-scroll.scss";
-
-
-// Layout
-@import "layout/footer.scss";
-@import "layout/image.scss";
-@import "layout/masthead.scss";
-@import "layout/section.scss";
-@import "layout/subpage.scss";
+// Components and layout
+@import "page.scss";
+@import "buttons.scss";
+@import "navbar.scss";
+@import "client-scroll.scss";
+@import "footer.scss";
+@import "image.scss";
+@import "masthead.scss";

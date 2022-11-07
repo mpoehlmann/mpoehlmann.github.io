@@ -96,4 +96,6 @@ bundle exec jekyll serve
 - [ ] Tooltips
 
 
-## 
+## Changes since push
+- [ ] `_includes/footer.html`
+  - Removed script after footer

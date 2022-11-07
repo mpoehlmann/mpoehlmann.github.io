@@ -9,7 +9,7 @@ header:
 footer:
   legal: "privacy policy."
   social:
-    - url: mailto:poehlmann@ucdavis.edu
+    - url: mailto:{{site.email}}
       icon: fas fa-envelope
     - url: https://github.com/mpoehlmann
       icon: fab fa-github
