@@ -1,0 +1,23 @@
+navbar:
+  - title: "about."
+    url: "/about"
+  - title: "research."
+    url: "/research"
+  - title: "outreach."
+    url: "/outreach"
+  - title: "beyond physics."
+    url: "/beyondphysics"
+  - title: "cv."
+    url: "/cv"
+  - title: "contact."
+    url: "/contact"
+
+footer:
+  legal: "privacy policy."
+  social:
+    - url: https://github.com/mpoehlmann
+      icon: fab fa-github
+    - url: https://www.linkedin.com/in/michael-poehlmann-511359123/
+      icon: fab fa-linkedin-in
+    - url: https://orcid.org/0000-0002-7131-8433
+      icon: fab fa-orcid

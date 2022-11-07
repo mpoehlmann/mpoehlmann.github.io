@@ -36,14 +36,12 @@ exclude:
   - "node_modules"
   - "Gemfile"
   - "Gemfile.lock"
-  - "vendor/bundle/"
-  - "vendor/cache/"
-  - "vendor/gems/"
-  - "vendor/ruby/"
 
 # Copy necessary files
 jekyll-copyr:
   tasks:
+    - from: "node_modules/@fortawesome/fontawesome-free/webfonts/."
+      to: "_site/assets/webfonts/"
     - from: "node_modules/jquery/dist/."
       to: "_site/assets/vendor/"
     - from: "node_modules/jquery-easing/dist/."
@@ -52,8 +50,6 @@ jekyll-copyr:
       to: "_site/assets/vendor/"
     - from: "node_modules/bootstrap/dist/js/."
       to: "_site/assets/vendor/"
-    - from: "node_modules/@fortawesome/fontawesome-free/webfonts/."
-      to: "_site/assets/webfonts/"
 
 # Plugins
 plugins:
@@ -67,3 +63,4 @@ plugins:
   - jemoji
   - jekyll-jupyter-notebook
   - jekyll-scholar
+  - jekyll-debug

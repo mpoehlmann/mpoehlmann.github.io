@@ -2,6 +2,9 @@
 
 Michael Poehlmann's personal website.
 
+- https://github.com/Phlow/feeling-responsive
+- https://github.com/artemsheludko/flexible-jekyll
+
 ## Initial setup
 
 ### Prerequisites
@@ -85,6 +88,14 @@ To `_sass/custom.scss` add:
 ```
 Note that bootstrap is imported AFTER the custom variables and mixins, so they override the bootstrap defaults.
 
+## Debugging liquid
+
+This employs the [jekyll-debug](https://github.com/gemfarmer/jekyll-debug) plugin.
+To use, add the `debug` filter:
+```liquid
+{{ site | debug }}
+```
+
 ### Project structure
 
 The minimum project structure a Jekyll-based website are:
@@ -122,7 +133,7 @@ The `default.html` file contains the following lines, which includes the `head.h
 
 ### Website additions
 
-### Adding a new pae
+### Adding a new page
 
 ### Adding a new section to a page
 
