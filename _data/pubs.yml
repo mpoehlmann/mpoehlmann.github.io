@@ -1,0 +1,36 @@
+papers:
+  - id: ds20k_lm_sensitivity
+    title: Sensitivity of the DarkSide-20k experiment to low-mass dark matter candidates
+    url: TODO
+    description: TODO
+
+  - id: ds50_dmelec
+    title: Search for dark matter particle interactions with electron final states with DarkSide-50
+    url: TODO
+    description: TODO
+
+  - id: ds50_lowmass
+    title: Search for low-mass dark matter WIMPs with 12 ton-day exposure of DarkSide-50
+    url: TODO
+    description: TODO
+
+  - id: ds50_migdal
+    title: Search for dark matter-nucleon interactions via Migdal effect with DarkSide-50
+    url: TODO
+    description: TODO
+
+
+# Book chapters
+chapters:
+  - id: plastic_scint_book
+    title: "Plastic scintillator detectors for particle physics in Plastic scintillators: chemistry and applications"
+    url: FIXME
+    description: TODO
+
+# Conference talks
+talks:
+  - id: aps_apr2022
+    title: "2022 APS April conference: Search for Dark Matter-Electron Interactions with DarkSide-50"
+    slides_url: "https://docs.google.com/presentation/d/1MiZ2HvOi7j6BseUKQBqPp_Ww4UvY9cmQtz8q1Y21WZQ/edit?usp=sharing"
+    abstract_url: "https://meetings.aps.org/Meeting/APR22/Session/E10.6"
+    description: TODO

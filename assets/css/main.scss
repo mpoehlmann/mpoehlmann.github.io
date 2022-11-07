@@ -52,11 +52,16 @@ $gray-900: #212529 !default;
 // Import image variables to allow for specific styling
 $header-img: "{{ site.header-img }}";
 
-// Components and layout
+// Import libraries
+@import "bootstrap";
+@import "font-awesome";
+
+// Custom components and layout
 @import "page.scss";
 @import "buttons.scss";
 @import "navbar.scss";
 @import "client-scroll.scss";
 @import "footer.scss";
+@import "pubs.scss";
 @import "image.scss";
 @import "masthead.scss";

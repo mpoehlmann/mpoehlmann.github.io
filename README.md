@@ -94,7 +94,8 @@ bundle exec jekyll serve
   - [ ] `_includes/footer.html`
 
 - [ ] Tooltips
-
+- [ ] Bugs with active being removed from nav
+- [ ] Submenu with page sections
 
 ## Changes since push
 - [ ] `_includes/footer.html`

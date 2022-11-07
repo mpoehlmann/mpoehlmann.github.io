@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 ruby RUBY_VERSION
 
 gem 'jekyll'
+gem 'bootstrap', '~> 4.0.0'
+gem "font-awesome-rails"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
