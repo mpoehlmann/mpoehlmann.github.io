@@ -7,3 +7,6 @@ _site
 Gemfile.lock
 unused
 bootstrap-reference.html
+node_modules
+assets/vendor
+package-lock.json

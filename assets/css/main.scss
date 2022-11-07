@@ -1,67 +1,12 @@
 ---
 ---
-@charset "utf-8";
 
+@import "base/variables";
 
-// Font Mixins
-@mixin serif-font {
-  font-family: "Lora", serif; //Lato
+@import "bootstrap/scss/bootstrap";
+@import "@fortawesome/fontawesome-free/scss/fontawesome";
+
+.test-text {
+  background: #567a94;
+  color: $white;
 }
-
-@mixin script-font {
-  font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-@mixin body-font {
-  font-family: "Lora", sans-serif;
-}
-
-@mixin heading-font {
-  font-family: "Lato", sans-serif;
-}
-
-// Custom colors
-$primary: {{ site.data.style.primary | default: "#fed136" }} !default;
-// $primary-bg: lighten($primary, 35%);
-$primary-bg: lighten($primary, 25%);
-
-$secondary: {{ site.data.style.secondary | default: "#fed136" }} !default;
-$secondary-bg: lighten($secondary, 27%);
-
-$tertiary: {{ site.data.style.tertiary | default: "#fed136" }} !default;
-$tertiary-bg: lighten($tertiary, 25%);
-
-$dark-gray: {{ site.data.style.dark-gray | default: "#000" }} !default;
-$dark-gray-bg: lighten($dark-gray, 25%);
-
-$light-gray: {{ site.data.style.light-gray | default: "#fff" }} !default;
-$light-gray-bg: lighten($light-gray, 25%);
-
-$black: {{ site.data.style.black | default: "#000" }} !default;
-$white: {{ site.data.style.white | default: "#fff" }} !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-
-// Import image variables to allow for specific styling
-$header-img: "{{ site.header-img }}";
-
-// Import libraries
-@import "bootstrap";
-@import "font-awesome";
-
-// Custom components and layout
-@import "page.scss";
-@import "buttons.scss";
-@import "navbar.scss";
-@import "client-scroll.scss";
-@import "footer.scss";
-@import "pubs.scss";
-@import "image.scss";
-@import "masthead.scss";

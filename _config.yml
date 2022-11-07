@@ -1,39 +1,69 @@
 # Site settings
 title: Michael Poehlmann
-description: > # this means to ignore newlines until "baseurl:"
-  Michael Poehlmann's personal website.
+description: Michael Poehlmann's personal website.
+baseurl: ""
+url: ""
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
-
-# Meta settings
-# email: dm.poehlmann@gmail.com
 email: poehlmann@ucdavis.edu
 author: Michael Poehlmann
-logo: # Optional, defaults to site title
-  # path: assets\img\clients\creative-market.jpg
-  # height: 60 # Height in px, defaults to 52px
-header-img: "../img/header.jpg"
-contact-img: "../img/contact.png"
+header-img: "header.jpg"
+contact-img: "contact.png"
 
+# Google Analytics tracking code
 analytics:
-  google: 'UA-172415369-1' # Google Analytics tracking code here
-
-# include:
-#  - .htaccess
-
-collections_dir: collections
-collections:
-  mainpages:
-    permalink: /:path  # /:path/
-    output: true
-    order:
-      - about.html
-      - research.html
-      - publications.html
-      - tutorials.html
-      - beyond_physics.md
-  drafts:
-    output: false
+  google: 'UA-172415369-1'
 
 markdown: kramdown
+
+# Uses `_pages` to store all the site pages
+pages: ./_pages
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+# Required for bootstrap setup
+#   https://simpleit.rocks/ruby/jekyll/tutorials/how-to-add-bootstrap-4-to-jekyll-the-right-way/
+#   https://stackoverflow.com/a/60213738
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+include:
+  - ".htaccess"
+exclude:
+  - "node_modules"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "vendor/bundle/"
+  - "vendor/cache/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
+
+# Copy necessary files
+jekyll-copyr:
+  tasks:
+    - from: "node_modules/jquery/dist/."
+      to: "_site/assets/vendor/"
+    - from: "node_modules/jquery-easing/dist/."
+      to: "_site/assets/vendor/"
+    - from: "node_modules/popper.js/dist/umd/."
+      to: "_site/assets/vendor/"
+    - from: "node_modules/bootstrap/dist/js/."
+      to: "_site/assets/vendor/"
+    - from: "node_modules/@fortawesome/fontawesome-free/webfonts/."
+      to: "_site/assets/webfonts/"
+
+# Plugins
+plugins:
+  - jekyll-copyr
+  - jekyll-pages-directory
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jemoji
+  - jekyll-jupyter-notebook
+  - jekyll-scholar

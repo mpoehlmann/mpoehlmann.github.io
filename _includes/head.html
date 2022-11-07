@@ -1,60 +1,7 @@
 <head>
-  {% if site.analytics.google %}
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-  	  gtag('config', '{{ site.analytics.google }}');
-      // gtag('config', '{{ site.analytics.google }}', {
-        // 'allowAnchor': true
-      // });
-    </script>
-    <!-- End Google Analytics -->
-  {% endif %}
-
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="{{ page.description }}">
-  <meta name="author" content="{{ page.author }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-  <title>{% if page.title %}{{ page.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
-
-  <!-- Testing this block -->
-  <meta name="description" content="{{ page.description }}">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta property="og:image" content="">
-	{%- comment -%} <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-touch-icon-144x144.png"> {%- endcomment -%}
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#263959">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#263959">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
-
-
-  <!-- Bootstrap core CSS -->
-  {%- comment -%} <link href="assets/css/bootstrap.min.css" rel="stylesheet"> {%- endcomment -%}
-  <!-- Icons from FontAwesome -->
-  {%- comment -%} <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"> {%- endcomment -%}
-  <!-- Custom fonts for this template -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Lora:400,400i,700" rel="stylesheet">
-  <!-- Custom styles for this theme -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- Page container change top padding when nav shrinks -->
-  {% if page.layout == "page" %}
-    <style>
-      #pagecontainer {padding-top: 150px;}
-  	  @media only screen and (max-width: 991px) {
-  	    #pagecontainer {padding-top: 100px;}
-  	  }
-    </style>
-  {% endif %}
-
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{'/assets/css/main.css' | prepend: site.baseurl}}">
 </head>

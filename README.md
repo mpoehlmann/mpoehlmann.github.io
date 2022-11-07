@@ -2,7 +2,88 @@
 
 Michael Poehlmann's personal website.
 
+## Initial setup
+
+### Prerequisites
+Install the prerequisites:
+
+```bash
+brew install ruby
+brew --prefix ruby
+export PATH=/opt/homebrew/opt/ruby/bin:$PATH
+# export PATH=$(gem environment gemdir)/bin:$PATH
+export PATH=/Users/michael/.gem/ruby/3.1.0/bin:$PATH
+gem install --user-install bundler jekyll
+```
+
+### Local testing
+
+When first downloading the code, run
+
+```bash
+npm install
+bundle install
+```
+
+to install the necessary NPM packages and gems for the project.
+
+To create a local server, run
+
+```bash
+bundle exec jekyll serve
+```
+
+
 ## Tutorial
+
+### Installing bootstrap
+Installing bootstrap: https://simpleit.rocks/ruby/jekyll/tutorials/how-to-add-bootstrap-4-to-jekyll-the-right-way/
+
+```bash
+npm init --force
+npm install bootstrap@5.2 jquery popper.js @fortawesome/fontawesome-free
+# npm install --save @fortawesome/fontawesome-free
+```
+
+To `_config.yml` add:
+```yaml
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+include:
+  - ".htaccess"
+  - "node_modules"
+  - "_pages"
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "vendor/bundle/"
+  - "vendor/cache/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
+```
+
+To `_includes/default.html` add:
+```html
+<html>
+<body>
+...
+	<script src="{{'/node_modules/jquery/dist/jquery.min.js' | prepend: site.baseurl}}"></script>
+	<script src="{{'/node_modules/popper.js/dist/umd/popper.min.js' | prepend: site.baseurl}}"></script>
+	<script src="{{'/node_modules/bootstrap/dist/js/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+</body>
+</html>
+```
+
+To `_sass/custom.scss` add:
+```scss
+@import "base/variables";
+@import "base/mixins";
+@import "bootstrap/scss/bootstrap";
+@import "fortawesome/fontawesome-free/scss"
+```
+Note that bootstrap is imported AFTER the custom variables and mixins, so they override the bootstrap defaults.
 
 ### Project structure
 
@@ -39,35 +120,6 @@ The `default.html` file contains the following lines, which includes the `head.h
 </html>
 ```
 
-### Initial setup
-
-Install the prerequisites:
-
-```bash
-brew install ruby
-brew --prefix ruby
-export PATH=/opt/homebrew/opt/ruby/bin:$PATH
-# export PATH=$(gem environment gemdir)/bin:$PATH
-export PATH=/Users/michael/.gem/ruby/3.1.0/bin:$PATH
-gem install --user-install bundler jekyll
-```
-
-### Local testing
-
-When first downloading the code, run
-
-```bash
-bundle install
-```
-
-to install the necessary gems for the project.
-
-To create a local server, run
-
-```bash
-bundle exec jekyll serve
-```
-
 ### Website additions
 
 ### Adding a new pae
@@ -100,3 +152,7 @@ bundle exec jekyll serve
 ## Changes since push
 - [ ] `_includes/footer.html`
   - Removed script after footer
+
+## TODO
+- [ ] citations: https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/02/01/jekyll-and-bibtex/
+- [ ] Deploy: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
