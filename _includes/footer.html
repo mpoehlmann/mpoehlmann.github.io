@@ -2,18 +2,18 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-4">
-        <span class="copyright">&copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
+        <span class="copyright">&copy; {{ site.author }} {{ 'now' | date: "%Y" }}</span>
       </div>
 
       <!-- Social Media -->
       <div class="col-md-4">
         <ul class="list-inline social-buttons">
-          {% for link in site.data.sitetext.footer.social  %}
+          {% for link in site.data.navigation.footer.social  %}
             <li class="list-inline-item">
               {% if link.url %}
                 <a href="{{ link.url }}">
                   {% if link.icon %}
-                    <i class="{{ link.icon }}"></i>
+                    <i class="{{ link.icon }}" aria-hidden="true"></i>
                   {% elsif link.title %}
                     {{ link.title }}
                   {% else %}
@@ -30,7 +30,7 @@
       <div class="col-md-4">
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">
-            <a href="legal" class="white-link">{{ site.data.sitetext.footer.legal | default: "Privacy Policy" }}</a>
+            <a href={{ "legal" | prepend: site.baseurl}}>{{ site.data.navigation.footer.legal | default: "Privacy Policy" }}</a>
           </li>
         </ul>
       </div>

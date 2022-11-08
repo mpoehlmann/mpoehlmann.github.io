@@ -160,10 +160,20 @@ The `default.html` file contains the following lines, which includes the `head.h
 - [ ] Bugs with active being removed from nav
 - [ ] Submenu with page sections
 
-## Changes since push
-- [ ] `_includes/footer.html`
-  - Removed script after footer
 
 ## TODO
 - [ ] citations: https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/02/01/jekyll-and-bibtex/
 - [ ] Deploy: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+- [ ] Some cookies are misusing the recommended “SameSite“ attribute
+
+- [x] `_includes/footer_scripts.html`
+- [ ] `_includes/footer.html`
+- [x] `_includes/head.html`
+- [ ] `_includes/navbar.html`
+- [ ] `_layouts/default.html`
+- [ ] `_layouts/page.html`
+
+aside -> sidebar
+footer
+section
+contact

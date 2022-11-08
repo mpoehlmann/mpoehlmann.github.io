@@ -10,37 +10,47 @@
     color: $white;
     @include heading-font;
   }
+
+  a {
+    color: $white;
+     &:hover {
+      color: darken($white, 10%);
+      text-decoration: underline;
+    }
+  }
+
+  // Social media icons
+  ul.social-buttons {
+    margin-bottom: 0;
+    li {
+      a {
+        font-size: 20px;
+        line-height: 50px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
+        color: $primary; //$dark-gray;
+        border-radius: 100%;
+        outline: none;
+        background-color: $white;
+        &:active,
+        &:focus,
+        &:hover {
+          background-color: $secondary-bg; //$primary-bg;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  // Links on the right (privacy)
   ul.quicklinks {
     font-size: 90%;
     line-height: 40px;
     margin-bottom: 0;
     text-transform: none;
-    color: $white;
+    /* color: $white; */
     @include heading-font;
-  }
-}
-
-ul.social-buttons {
-  margin-bottom: 0;
-  li {
-    a {
-      font-size: 20px;
-      line-height: 50px;
-      display: block;
-      width: 50px;
-      height: 50px;
-      -webkit-transition: all 0.3s;
-      -moz-transition: all 0.3s;
-      transition: all 0.3s;
-      color: $primary; //$dark-gray;
-      border-radius: 100%;
-      outline: none;
-      background-color: $white;
-      &:active,
-      &:focus,
-      &:hover {
-        background-color: $secondary-bg; //$primary-bg;
-      }
-    }
   }
 }

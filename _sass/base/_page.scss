@@ -12,6 +12,7 @@ a {
   color: $tertiary;
    &:hover {
     color: darken($primary, 10%);
+    text-decoration: underline;
   }
 }
 
@@ -27,6 +28,14 @@ h5,
 h6 {
   font-weight: 700;
   @include heading-font;
+}
+
+h3,
+h4,
+h5 {
+  .body-heading {
+    @include body-font;
+  }
 }
 
 .page-section {
@@ -47,19 +56,6 @@ h6 {
     text-transform: none;
     // @include serif-font;
     @include heading-font;
-  }
-}
-/* @media(min-width:768px) {
-  section {
-    padding: 150px 0;
-  }
-} */
-
-h3,
-h4,
-h5 {
-  .body-heading {
-    @include body-font;
   }
 }
 
