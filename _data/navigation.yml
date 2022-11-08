@@ -1,15 +1,15 @@
 navbar:
-  - title: "about."
+  - title: about
     url: "/about"
-  - title: "research."
+  - title: research
     url: "/research"
-  - title: "outreach."
+  - title: outreach
     url: "/outreach"
-  - title: "beyond physics."
+  - title: beyond physics
     url: "/beyondphysics"
-  - title: "cv."
+  - title: cv
     url: "/cv"
-  - title: "contact."
+  - title: contact
     url: "/contact"
 
 footer:
