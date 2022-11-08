@@ -42,6 +42,8 @@ jekyll-copyr:
   tasks:
     - from: "node_modules/@fortawesome/fontawesome-free/webfonts/."
       to: "_site/assets/webfonts/"
+    - from: "node_modules/@fortawesome/fontawesome-free/js/."
+      to: "_site/assets/vendor/fontawesome"
     - from: "node_modules/jquery/dist/."
       to: "_site/assets/vendor/"
     - from: "node_modules/jquery-easing/dist/."
