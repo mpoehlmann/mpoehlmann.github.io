@@ -2,7 +2,7 @@
 ---
 
 // Define variables. These override bootstrap defaults.
-@import "base/variables";
+/* @import "base/variables"; */
 @import "base/mixins";
 
 // Import variables from _config.yml
@@ -27,8 +27,8 @@ $header-img: "{{ site.data.style.header-img }}";
 @import "bootstrap/scss/bootstrap";
 @import "@fortawesome/fontawesome-free/scss/fontawesome";
 
-@import "base/page";  // Base custom style
+/* @import "base/page";  // Base custom style */
 
 // Components and layouts
-@import "layout/footer";
-@import "layout/navbar";
+/* @import "layout/footer"; */
+/* @import "layout/navbar"; */

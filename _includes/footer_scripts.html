@@ -1,17 +1,18 @@
-<script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
-<script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
+<script src="{{'/assets/vendor/jquery/jquery.js' | prepend: site.baseurl}}"></script>
+<script src="{{'/assets/vendor/jquery-easing/jquery.easing.1.3.umd.js' | prepend: site.baseurl}}"></script>
+<script src="{{'/assets/vendor/popper/popper.js' | prepend: site.baseurl}}"></script>
 <!--
 Only load the bootstrap.bundle where popper is bundled with bootstrap, otherwise you will get an error
 https://stackoverflow.com/a/72336371
 -->
-<script src="{{'/assets/vendor/bootstrap.bundle.min.js' | prepend: site.baseurl}}"></script>
-<script async src="{{'/assets/vendor/fontawesome/all.min.js' | prepend: site.baseurl}}"></script>
+<script src="{{'/assets/vendor/bootstrap/bootstrap.bundle.js' | prepend: site.baseurl}}"></script>
+<script async src="{{'/assets/vendor/fontawesome/all.js' | prepend: site.baseurl}}"></script>
 
 <!-- MathJax -->
 <script type="text/javascript">
   window.MathJax = {
     tex: {
-      packages: ['base'],, 'ams'],
+      packages: ['base', 'ams'],
       inlineMath: [['$', '$'], ['\\(', '\\)']]
     },
     loader: {

@@ -12,21 +12,24 @@
     </a>
 
     <!-- Dropdown button if site is too narrow -->
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    {%- comment -%} <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       MENU
       <i class="fas fa-bars"></i>
+    </button> {%- endcomment -%}
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
 
     <!-- Navigation links -->
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto"> <!-- text-uppercase -->
+      <ul class="navbar-nav mr-auto">
         {%- for link in site.data.navigation.navbar -%}
           {%- assign link_name = link.title | append: "." -%}
           <!-- Determine if active -->
           {%- if link.url == page.url -%}
-            {%- assign class = "active" -%}
+            {%- assign class = " active" -%}
           {%- elsif page.homepage == true and link.url == '/' -%}
-            {%- assign class = "active" -%}
+            {%- assign class = " active" -%}
           {%- else -%}
             {%- assign class = "" -%}
           {%- endif -%}
@@ -34,7 +37,7 @@
           {%- if link.url -%}
             {%- assign href = link.url | prepend: site.baseurl -%}
             <li class="nav-item">
-              <a class="nav-link {{ class }}" href="{{ href }}" onclick="gtag('event', 'click', {'event_category':'internal', 'event_label':'{{ href }}'});">{{ link_name }}</a>
+              <a class="nav-link{{ class }}" href="{{ href }}" onclick="gtag('event', 'click', {'event_category':'internal', 'event_label':'{{ href }}'});">{{ link_name }}</a>
             </li>
           {%- endif -%}
         {%- endfor -%}
