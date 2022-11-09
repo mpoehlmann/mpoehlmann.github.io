@@ -1,0 +1,6 @@
+.nav-link {
+  &:hover:active {
+    color: darken($primary, 10%);
+    text-decoration: underline;
+  }
+}

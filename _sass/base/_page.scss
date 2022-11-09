@@ -10,8 +10,9 @@ p {
 
 a {
   color: $tertiary;
-   &:hover {
-    color: darken($primary, 10%);
+  text-decoration: none;
+  &:hover:active {
+    color: darken($tertiary, 10%);
     text-decoration: underline;
   }
 }
@@ -62,11 +63,6 @@ h5 {
 img::selection {
   background: transparent;
 }
-
-img::-moz-selection {
-  background: transparent;
-}
-
 
 .img-caption {
   margin-top: 10px;

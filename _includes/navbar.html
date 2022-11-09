@@ -22,11 +22,19 @@
       <ul class="navbar-nav ml-auto"> <!-- text-uppercase -->
         {%- for link in site.data.navigation.navbar -%}
           {%- assign link_name = link.title | append: "." -%}
+          <!-- Determine if active -->
+          {%- if link.url == page.url -%}
+            {%- assign class = "active" -%}
+          {%- elsif page.homepage == true and link.url == '/' -%}
+            {%- assign class = "active" -%}
+          {%- else -%}
+            {%- assign class = "" -%}
+          {%- endif -%}
           <!-- TODO: Add sublinks -->
           {%- if link.url -%}
             {%- assign href = link.url | prepend: site.baseurl -%}
             <li class="nav-item">
-              <a class="nav-link" href="{{ href }}" onclick="gtag('event', 'click', {'event_category':'internal', 'event_label':'{{ href }}'});">{{ link_name }}</a>
+              <a class="nav-link {{ class }}" href="{{ href }}" onclick="gtag('event', 'click', {'event_category':'internal', 'event_label':'{{ href }}'});">{{ link_name }}</a>
             </li>
           {%- endif -%}
         {%- endfor -%}
