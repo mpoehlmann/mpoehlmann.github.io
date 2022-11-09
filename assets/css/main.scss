@@ -27,8 +27,8 @@ $header-img: "{{ site.data.style.header-img }}";
 @import "bootstrap/scss/bootstrap";
 @import "@fortawesome/fontawesome-free/scss/fontawesome";
 
-/* @import "base/page";  // Base custom style */
+@import "base/page";  // Base custom style
 
 // Components and layouts
-/* @import "layout/footer"; */
-/* @import "layout/navbar"; */
+@import "layout/footer";
+@import "layout/navbar";
