@@ -52,6 +52,8 @@ jekyll-copyr:
       to: "_site/assets/vendor/"
     - from: "node_modules/bootstrap/dist/js/."
       to: "_site/assets/vendor/"
+    - from: "node_modules/mathjax/es5/."
+      to: "_site/assets/vendor/mathjax/"
 
 # Plugins
 plugins:
