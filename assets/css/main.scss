@@ -38,5 +38,6 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Components and layouts
 @import "base/page";  // Base custom style
-@import "layout/footer";
-@import "layout/navbar";
+@import "components/footer";
+@import "components/navbar";
+@import "components/pubs";

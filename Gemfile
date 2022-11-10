@@ -14,7 +14,7 @@ group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'jemoji'
   gem 'jekyll-jupyter-notebook'
-  gem 'jekyll-scholar'
+  # gem 'jekyll-scholar'
   gem 'jekyll-debug'
 end
 

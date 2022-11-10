@@ -13,22 +13,21 @@
 }
 
 // Other mixins
-@mixin hover-light {
+@mixin link-white {
   text-decoration: none;
   color: $white;
   &:hover,
   &:active {
     text-decoration: underline;
-    color: $white;
-    /* color: darken($light, 10%); */
+    color: $white;  // darken($light, 10%);
   }
 }
-@mixin hover-dark {
+@mixin link-dark {
   text-decoration: none;
-  color: $black;
-  @inclue hover-light;
+  color: $dark;
   &:hover,
   &:active {
-    color: $black; // lighten($dark, 10%);
+    text-decoration: underline;
+    color: $dark; // lighten($dark, 10%);
   }
 }

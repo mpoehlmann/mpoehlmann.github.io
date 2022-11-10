@@ -1,0 +1,44 @@
+papers:
+  - tag: AgnesSensitivityDarkSide20kExperiment2023
+    citation: >-
+      The DarkSide Collaboration,
+      "Sensitivity of the DarkSide-20k experiment to low-mass dark matter candidates,"
+      manuscript in preparation (2023).
+    description: >-
+      I am the primary author of this paper and I have led the low-mass sensitivity calculations effort.
+
+  - tag: AgnesSearchDarkMatter2022
+    citation: >-
+      The DarkSide Collaboration,
+      ["Search for dark matter particle interactions with electron final states with DarkSide-50,"](http://arxiv.org/abs/2207.11968)
+      manuscript under review (2022).
+    description: I am the primary author of this paper and performed four of the five analyses detailed here.
+
+  - tag: AgnesSearchDarkMatternucleon2022
+    citation: >-
+      The DarkSide Collaboration,
+      ["Search for dark matter-nucleon interactions via Migdal effect with DarkSide-50,"](http://arxiv.org/abs/2207.11967)
+      manuscript under review (2022).
+    description: >-
+      Contributed to ???.
+      I also helped to edit the paper.
+
+
+  - tag: AgnesSearchDarkMatternucleon2022
+    citation: >-
+      The DarkSide Collaboration,
+      ["Search for low-mass dark matter WIMPs with 12 ton-day exposure of DarkSide-50,"](http://arxiv.org/abs/2207.11966)
+      manuscript under review (2022).
+    description: >-
+      Contributed to ???.
+      I also helped to edit the paper.
+
+chapters:
+  - tag: CushmanPlasticScintillatorDetectors2021
+    citation: >-
+      P. B. Cushman and D. M. Poehlmann,
+      [*Plastic Scintillator Detectors for Particle Physics*](https://doi.org/10.1007/978-3-030-73488-6_15),
+      in *Plastic Scintillators*, edited by M. Hamel,
+      Vol. 140 (Springer International Publishing, Cham, 2021), pp. 541-588.
+
+presentations:

@@ -1,0 +1,32 @@
+$pub-spacing: 1rem;
+
+.pub-section {
+  margin: 0 $pub-spacing 0;
+}
+
+.pub-heading {
+  margin: 2 * $pub-spacing 0 $pub-spacing;
+}
+
+.pub-block {
+  margin: 0 0 $pub-spacing;
+  padding: $pub-spacing;
+  background-color: $secondary-bg;
+}
+
+.pub-citation {
+  @include heading-font;
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  color: $black;
+  a {
+    @include link-dark;
+  }
+}
+
+.pub-desc {
+  font-size: 14px;
+  line-height: 1;
+  color: $dark-gray;
+  margin: 0;
+}

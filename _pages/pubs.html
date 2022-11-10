@@ -3,6 +3,42 @@ layout: page
 title: publications.
 ---
 
-<div class="container-fluid" role="main">
-  Text goes here (pubs)
+<div class="container-lg">
+  <div class="row">  <!--row-cols-2 mx-auto flex-nowrap-->
+    <div class="col-lg-6">
+      <!-- Book chapters -->
+      <div class="row pub-section">
+        <h2 class="pub-heading">book chapters.</h2>
+        {%- for pub in site.data.references.chapters -%}
+          <div class="pub-block" id="{{pub.tag}}">
+            <p class="pub-citation">{{pub.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            <p class="pub-desc">{{pub.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+      <!-- Publications -->
+      <div class="row pub-section">
+        <h2 class="pub-heading">papers.</h2>
+        {%- for pub in site.data.references.papers -%}
+          <div class="pub-block" id="{{pub.tag}}">
+            {%- comment -%} <a href="{{ pub.url }}" class="pub-title">{{pub.citation}}</a> {%- endcomment -%}
+            <p class="pub-citation">{{pub.citation | markdownify | remove: '<p>' | remove: '</p>'  }}</p>
+            <p class="pub-desc">{{pub.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <!-- Presentations -->
+      <div class="row pub-section">
+        <h2 class="pub-heading">presentations.</h2>
+        {%- for pub in site.data.references.presentations -%}
+          <div class="pub-block" id="{{pub.tag}}">
+            <p class="pub-citation">{{pub.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            <p class="pub-desc">{{pub.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
 </div>

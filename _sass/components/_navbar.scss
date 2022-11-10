@@ -1,10 +1,10 @@
 .navbar-brand {
-  @include hover-light;
+  @include link-white;
   @include heading-font;
   color: $white;
 }
 .nav-link {
-  @include hover-light;
+  @include link-white;
   @include heading-font;
 }
 .navbar-nav {

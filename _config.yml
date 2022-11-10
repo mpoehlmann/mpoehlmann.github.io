@@ -67,5 +67,4 @@ plugins:
   - jekyll-paginate
   - jemoji
   - jekyll-jupyter-notebook
-  - jekyll-scholar
   - jekyll-debug
