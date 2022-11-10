@@ -13,8 +13,7 @@
 
     <!-- Dropdown button if site is too narrow -->
     <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      MENU
-      <span class="navbar-toggler-icon"></span>
+      <i class="fas fa-bars"></i>
     </button>
 
     <!-- Navigation links -->
@@ -22,17 +21,15 @@
       <ul class="navbar-nav mr-auto">
         {%- for link in site.data.navigation.navbar -%}
           {%- assign link_name = link.title | append: "." -%}
-          <!-- Determine if active -->
-          {%- if link.url == page.url -%}
-            {%- assign class = " active" -%}
-          {%- elsif page.homepage == true and link.url == '/' -%}
-            {%- assign class = " active" -%}
-          {%- else -%}
-            {%- assign class = "" -%}
-          {%- endif -%}
           <!-- TODO: Add sublinks -->
           {%- if link.url -%}
             {%- assign href = link.url | prepend: site.baseurl -%}
+            <!-- Determine if active -->
+            {%- if href == page.url -%}
+              {%- assign class = " active" -%}
+            {%- else -%}
+              {%- assign class = "" -%}
+            {%- endif -%}
             <li class="nav-item">
               <a class="nav-link{{ class }}" href="{{ href }}" onclick="gtag('event', 'click', {'event_category':'internal', 'event_label':'{{ href }}'});">{{ link_name }}</a>
             </li>

@@ -1,0 +1,8 @@
+$primary-bg: lighten($primary, 25%);  // 35%
+$secondary-bg: lighten($secondary, 27%);
+$tertiary-bg: lighten($tertiary, 25%);
+$dark-gray-bg: lighten($dark-gray, 25%);
+$light-gray-bg: lighten($light-gray, 25%);
+
+$hover-color-dark: lighten($dark, 10%);
+$hover-color-light: $light; // darken($light, 10%);

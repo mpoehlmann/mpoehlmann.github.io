@@ -11,3 +11,24 @@
 @mixin heading-font {
   font-family: "Lato", sans-serif;
 }
+
+// Other mixins
+@mixin hover-light {
+  text-decoration: none;
+  color: $white;
+  &:hover,
+  &:active {
+    text-decoration: underline;
+    color: $white;
+    /* color: darken($light, 10%); */
+  }
+}
+@mixin hover-dark {
+  text-decoration: none;
+  color: $black;
+  @inclue hover-light;
+  &:hover,
+  &:active {
+    color: $black; // lighten($dark, 10%);
+  }
+}

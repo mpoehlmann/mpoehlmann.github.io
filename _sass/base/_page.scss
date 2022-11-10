@@ -9,12 +9,7 @@ p {
 }
 
 a {
-  color: $tertiary;
-  text-decoration: none;
-  &:hover:active {
-    color: darken($tertiary, 10%);
-    text-decoration: underline;
-  }
+  @include hover-dark;
 }
 
 .text-primary {
@@ -36,27 +31,6 @@ h4,
 h5 {
   .body-heading {
     @include body-font;
-  }
-}
-
-.page-section {
-  padding: 50px 0; // padding: 100px 0;
-  h2.section-heading {
-    // color: $dark-gray;
-    color: $black;
-    font-size: 60px;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 15px;
-  }
-  .section-subheading {
-    color: $tertiary; // $dark-gray;
-    font-weight: 400;
-    font-style: italic;
-    margin-bottom: 30px; // 75px;
-    text-transform: none;
-    // @include serif-font;
-    @include heading-font;
   }
 }
 

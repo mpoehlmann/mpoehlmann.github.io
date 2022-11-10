@@ -2,7 +2,7 @@
 .footer {
   padding: 15px 0;
   text-align: center;
-  background-color: $primary; //$dark-gray;
+  background-color: $dark;
   span.copyright {
     font-size: 90%;
     line-height: 40px;
@@ -35,11 +35,8 @@
         border-radius: 100%;
         outline: none;
         background-color: $white;
-        &:active,
-        &:focus,
         &:hover {
-          background-color: $secondary-bg; //$primary-bg;
-          transform: scale(1.2);
+          transform: scale(1.15);
         }
       }
     }

@@ -1,34 +1,42 @@
 ---
 ---
-
-// Define variables. These override bootstrap defaults.
-/* @import "base/variables"; */
-@import "base/mixins";
+// Helpful info:
+//   https://getbootstrap.com/docs/5.0/customize/sass/
 
 // Import variables from _config.yml
 $primary: {{ site.data.style.primary | default: "#fed136" }} !default;
-$primary-bg: lighten($primary, 25%);  // 35%
 $secondary: {{ site.data.style.secondary | default: "#fed136" }} !default;
-$secondary-bg: lighten($secondary, 27%);
 $tertiary: {{ site.data.style.tertiary | default: "#fed136" }} !default;
-$tertiary-bg: lighten($tertiary, 25%);
+$dark: {{ site.data.style.dark | default: "#000" }} !default;
+$light: {{ site.data.style.light | default: "#fff" }} !default;
 $dark-gray: {{ site.data.style.dark-gray | default: "#000" }} !default;
-$dark-gray-bg: lighten($dark-gray, 25%);
 $light-gray: {{ site.data.style.light-gray | default: "#fff" }} !default;
-$light-gray-bg: lighten($light-gray, 25%);
 $black: {{ site.data.style.black | default: "#000" }} !default;
 $white: {{ site.data.style.white | default: "#fff" }} !default;
 // $body-bg
 // $body-color
 
+// Define variables. These override bootstrap defaults.
+@import "base/variables";
+@import "base/mixins";
+
 // Import images from _config.yml so they can be accessed in the SASS
 $header-img: "{{ site.data.style.header-img }}";
 
+// Import bootstrap
 @import "bootstrap/scss/bootstrap";
 @import "@fortawesome/fontawesome-free/scss/fontawesome";
 
-@import "base/page";  // Base custom style
+// Add to bootstrap map
+$custom-colors: (
+  "primary-bg": $primary-bg,
+  "secondary-bg": $secondary-bg,
+  "tertiary": $tertiary,
+  "tertiary-bg": $tertiary-bg
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Components and layouts
+@import "base/page";  // Base custom style
 @import "layout/footer";
 @import "layout/navbar";
