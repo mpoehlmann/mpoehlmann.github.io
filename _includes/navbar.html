@@ -24,14 +24,14 @@
           <!-- TODO: Add sublinks -->
           {%- if link.url -%}
             {%- assign href = link.url | prepend: site.baseurl -%}
+            {%- assign current_url = page.url | remove: ".html" -%}
             <!-- Determine if active -->
-            {%- if href == page.url -%}
-              {%- assign class = " active" -%}
-            {%- else -%}
-              {%- assign class = "" -%}
+            {%- assign class = "" -%}
+            {% if link.url == current_url %}
+              {%- assign class = "current" -%}
             {%- endif -%}
             <li class="nav-item">
-              <a class="nav-link{{ class }}" href="{{ href }}" onclick="gtag('event', 'click', {'event_category':'internal', 'event_label':'{{ href }}'});">{{ link_name }}</a>
+              <a class="nav-link {{ class }}" href="{{ href }}" onclick="gtag('event', 'click', {'event_category':'internal', 'event_label':'{{ href }}'});">{{ link_name }}</a>
             </li>
           {%- endif -%}
         {%- endfor -%}

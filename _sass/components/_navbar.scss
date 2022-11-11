@@ -2,10 +2,14 @@
   @include link-white;
   @include heading-font;
   color: $white;
+  font-size: 1.5rem;
 }
 .nav-link {
   @include link-white;
   @include heading-font;
+}
+.current {
+  text-decoration: underline;
 }
 .navbar-nav {
   margin-left: auto;  // All items aligned to the right

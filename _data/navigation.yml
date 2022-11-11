@@ -1,14 +1,14 @@
 navbar:
   - title: about
-    url: "/about/"
+    url: "/about"
   - title: research
-    url: "/research/"
+    url: "/research"
   - title: publications
-    url: "/pubs/"
+    url: "/pubs"
   - title: outreach
-    url: "/outreach/"
+    url: "/outreach"
   - title: beyond physics
-    url: "/beyondphysics/"
+    url: "/beyondphysics"
 
 footer:
   legal: "privacy policy."
