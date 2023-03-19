@@ -6,29 +6,98 @@ header:
   button: ABOUT ME
   buttonlink: "#about"
 
-about:
-  title: "about."
-  section: about
-  
-research:
-  title: "research."
-  section: research
-  
-outreach:
-  title: "outreach."
-  section: outreach
+publications:
+  papers:
+    - tag: AgnesSearchDarkMatter2023
+      citation: >-
+        **The DarkSide-50 Collaboration**, “Search for dark matter particle interactions with electron final states with DarkSide-50,” Physical Review Letters 130, 101002 (2023).<br/>
+        DOI: [10.1103/PhysRevLett.130.101002](https://www.doi.org/10.1103/PhysRevLett.130.101002)
+      # description: >-
+      #   TODO
 
-beyondphysics:
-  title: "beyond physics."
-  section: beyondphysics
+    - tag: AgnesSearchLowmassDark2023
+      citation: >-
+        **The DarkSide-50 Collaboration**, “Search for low-mass dark matter WIMPs with 12 ton-day exposure of DarkSide-50,” Physical Review D 107, 063001 (2023).<br/>
+        DOI: [10.1103/PhysRevD.107.063001](https://www.doi.org/10.1103/PhysRevD.107.063001)
+      # description: >-
+      #   TODO
 
-cv:
-  title: "curriculum vitae."
-  section: cv
-  
-contact:
-  title: "contact."
-  section: contact
+    - tag: AgnesSearchDarkMatterNucleon2023
+      citation: >-
+        **The DarkSide-50 Collaboration**, "Search for dark matter-nucleon interactions via Migdal effect with DarkSide-50," accepted by Physical Review Letters 130, 101001 (2023).<br/>
+        DOI: [10.1103/PhysRevLett.130.101001](https://www.doi.org/10.1103/PhysRevLett.130.101001)
+      # description: >-
+      #   TODO
+
+    - tag: AgnesSearchLowMass2023
+      citation: >-
+        **The DarkSide-50 Collaboration**, “Search for low mass dark matter in DarkSide-50: the Bayesian network approach,” submitted to European Physical Journal C (2023).<br/>
+        DOI: [10.48550/arXiv.2302.01830](https://www.doi.org/10.48550/arXiv.2302.01830)
+      # description: >-
+      #   TODO
+
+    - tag:
+      citation: >-
+        **The DarkSide-20k Collaboration**, "Sensitivity of the DarkSide-20k experiment to low-mass dark matter candidates," manuscript in preparation (2023).
+      # description: >-
+      #   I am the primary author of this paper and I have led the low-mass sensitivity calculations effort.
+
+    - tag: DarkSide20kCollaborationStudyCosmogenicActivation2023
+      citation: >-
+        **The DarkSide-20k Collaboration**, “Study on cosmogenic activation above ground for the DarkSide-20k project,” submitted to Astroparticle Physics (2023).<br/>
+        DOI: [10.48550/arXiv.2301.12970](https://www.doi.org/10.48550/arXiv.2301.12970)
+      # description: >-
+      #   TODO
+
+    - tag: DarkSide20kCollaborationMeasurementIsotopicSeparation2023
+      citation: >-
+        **The DarkSide-20k Collaboration**, “Measurement of isotopic separation of argon with the prototype of the cryogenic distillation plant Aria for dark matter searches,” submitted to European Physical Journal C (2023).<br/>
+        DOI: [10.48550/arXiv.2301.09639](https://www.doi.org/10.48550/arXiv.2301.09639)
+      # description: >-
+      #   TODO
+
+    - tag: DarkSideColloaborationSensitivityProjectionsDarkSideLowMass2022
+      citation: >-
+        **The DarkSide-20k Collaboration**, “Sensitivity projections for a dual-phase argon TPC optimized for light dark matter searches through the ionization channel,” submitted to Physical Review Letters (2023).<br/>
+        DOI: [10.48550/arXiv.2209.01177](https://www.doi.org/10.48550/arXiv.2209.01177)
+      # description: >-
+      #   TODO
+
+    - tag: PoehlmannCharacterizationGadoliniumloadedPlastic2018
+      citation: >-
+        **D.M. Poehlmann**, D. Barker, H. Chagani, P. Cushman, G. Heuermann, A. Medved , H.E. Rogers, and R. Schmitz, “Characterization of gadolinium-loaded plastic scintillator for use as a neutron veto,” arXiv:1812.11267 (2018).<br/>
+        DOI: [10.48550/arXiv.1812.11267](https://www.doi.org/10.48550/arXiv.1812.11267)
+      # description: >-
+      #   TODO
+
+  chapters:
+    - tag: CushmanPlasticScintillatorDetectors2021
+      citation: >-
+        P.B. Cushman and **D.M. Poehlmann**, “Plastic Scintillator Detectors for Particle Physics,” in *Plastic Scintillators: Chemistry and Applications* (Springer International Publishing, 2021), pp. 541-588.<br/>
+        DOI: [10.1007/978-3-030-73488-6_15](https://www.doi.org/10.1007/978-3-030-73488-6_15)
+      # description: >-
+      #   I co-wrote this book chapter with Prof. Priscilla Cushman on the applications of plastic scintillator (PS) in particle physics experiments.
+      #   As my undergraduate honors thesis was on doping plastic scintillator with gadolinium, this chapter provided a great opportunity to conduct a historical review of PS in physics.
+
+  presentations:
+    - tag:
+      citation: >-
+        **D.M. Poehlmann**, "Search for Dark Matter-Electron Interactions with DarkSide-50," Presentation, APS April Conference 2022, New York (Apr 2022).
+    - tag:
+      citation: >-
+        **D.M. Poehlmann**, "Position reconstruction for DarkSide-20k," Presentation, APS Far West Conference 2021, virtual (Oct 2021).
+    - tag:
+      citation: >-
+        **D.M. Poehlmann**, "Optical modeling and position reconstruction for DarkSide-20k," Presentation, LIDINE Conference 2021, virtual (Sept 2021).
+    - tag:
+      citation: >-
+        **D.M. Poehlmann**, "Constraints on sub-GeV dark matter-electron scattering from the DarkSide-50 experiment," Presentation, APS Far West Conference 2020, virtual (Oct 2020).
+    - tag:
+      citation: >-
+        **D.M. Poehlmann**, "The DarkSide-20k experiment in 10 minutes," Talk, New Perspectives Conference 2020, virtual (July 2020).
+    - tag:
+      citation: >-
+        **D.M. Poehlmann**, "Argon recoil ionization and scintillation from electron recoils (ARIS-ER)," Poster, APS Far West 2019, Stanford (Nov 2019).
 
 footer:
   legal: "privacy policy."
@@ -39,21 +108,20 @@ footer:
       icon: fab fa-linkedin-in
     - url: https://orcid.org/0000-0002-7131-8433
       icon: fab fa-orcid
-      
-      
+
 subpages:
   # - title: "current projects."
   #   subtitle: "A summary of my current research projects."
   #   section: research
   #   subsection: currentprojects
   #   thumbnail: "../assets/img/michael_ariser_poster.jpg"
-  
+
   # - title: "previous work."
   #   subtitle: "An overview of my past research activities."
   #   section: research
   #   subsection: previouswork
   #   thumbnail: "../assets/img/michael_ariser_poster.jpg"
-    
+
   # - title: "two-phase TPCs."
   #   subtitle: "An introduction to two-phase argon time projection chambers."
   #   # section: adfas

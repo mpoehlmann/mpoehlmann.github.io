@@ -1,87 +1,97 @@
 <!-- Research -->
-<section class="page-section" id="{{ site.data.sitetext.research.section }}">
+<section class="page-section" id="research">
   <div class="container-fluid">
-    
-    <h2 class="section-heading text-center">{{ site.data.sitetext.research.title }}</h2>
-    
+
+    <h2 class="section-heading text-center">Research</h2>
+
     <h3 class="section-subheading text-center">
-      My quest for the detection of rare events.
+      My quest to discover new particles.
     </h3>
-    
-    <div class="row mx-auto flex-nowrap">
+
+    <div class="row mx-auto">
       <div class="col-md-4 border-img">
-        <img class="img-fluid" src="../assets/img/michael_ariser_poster.jpg" alt="">
-        <div class="img-caption text-left">
+        <img
+          class="img-fluid"
+          src="../assets/img/michael_ariser_poster.jpg"
+          alt="">
+        <div class="img-caption text-center">
           Here, I am shown presenting a poster on ARIS-ER.
         </div>
       </div>
-      
-      <div class="col-8 p-4 m-0 section-bg-secondary-light">
-        
-        <h4 class="body-heading"> DarkSide </h4> 
+
+      <div class="col-md-8 p-4 m-0 section-bg-secondary-light">
+
+        <h4 class="body-heading">
+          DarkSide
+        </h4>
         <p>
           The
           <a href="http://darkside.lngs.infn.it" onclick="gtag('event', 'click', {'event_category':'external', 'event_label':'http://darkside.lngs.infn.it'});">DarkSide Program</a>
-          aims at the direct detection of dark matter using 
+          aims at the direct detection of dark matter using
           <!-- <a class="subpage-link" data-toggle="modal" href="#twophasetpc">two-phase argon time projection chambers (TPCs)</a>. -->
           two-phase argon time projection chambers (TPCs).
-          The upcoming phase of the DarkSide Program is DarkSide-20k, a next-generation dark matter detector at the Laboratori Nazionali del Gran Sasso in Italy.
-          <!-- To give an idea of the experiment's scope, DarkSide-20k will only need to see 5 dark matter-like events over 10 years of data collection to credibly claim discovery at five standard deviations.
-          These five events -->
+          The first physics detector of the program, DarkSide-50, finished taking data in 2018. I used DarkSide-50 data set
+          <a href="https://www.doi.org/10.1103/PhysRevLett.130.101002" onclick="gtag('event', 'click', {'event_category':'external', 'event_label':'http://darkside.lngs.infn.it'});">world-leading constraints</a>
+          on several leptophilic dark matter models.
         </p>
         <p>
-          As a member of the DarkSide Collaboration, I run simulations to inform the design of DarkSide-20k, with a focus on backgrounds and optical modeling.
-          I also contribute to the analysis of data collected by DarkSide-50.
+          The current phase of the DarkSide Program is DarkSide-20k, a next-generation dark matter detector at the Laboratori Nazionali del Gran Sasso in Italy.
+          My work has included simulation of detector backgrounds to inform and optimize the DarkSide-20k design. I have also led the development of a Python-based data reconstruction package for the next-generation DarkSide-20k experiment, as well as the low-mass sensitivity projections effort.
         </p>
         <br>
-        
-        <h4 class="body-heading"> ARIS-ER </h4> 
+
+        <h4 class="body-heading">
+          ARIS-ER
+        </h4>
         <p>
-          One of the most significant analysis limitations faced by DarkSide-20k is the accurate modeling of the detector's response to different classes of dark matter interactions.
+          Modeling of electron recoil backgrounds for detectors such as DarkSide-20k and DarkSide-LowMass is limited by the lack of low-energy calibration points.
+          Precise calibration of liquid argon's response to electron recoils down to a keV<sub>er</sub>
+          would improve the sensitivity of future experiments to low-mass dark matter interactions.
+        </p>
+        <p>
+          The ARIS-ER experiment at UC Davis will accomplish this by measuring the response of liquid argon to monoenergetic gammas which Compton scatter in the detector.
+          The energy of the scattered gamma will be precisely measured with a germanium detector.
+          <!--, allowing the energy in the TPC to be reconstructed.-->
+          I have demonstrated the feasibility and optimized the experimental design of ARIS-ER via Monte Carlo simulations.
+          I also developed a C++ data acquisition (DAQ) program to digitize and record photosensor waveforms.
+          <!--
           In 2017, the
-          <a href="https://arxiv.org/abs/1801.06653" onclick="gtag('event', 'click', {'event_category':'external', 'event_label':'https://arxiv.org/abs/1801.06653'});">ARIS experiment</a> 
-          measured the scintillation and ionization response of LAr to impinging neutrons of known energy. 
-          In a continuing effort to study the response of liquid argon at low energies, the proposed Argon Recoil Ionization and Scintillation from Electron Recoils (ARIS-ER) experiment will measure the response of liquid argon to monoenergetic gammas which Compton scatter in the detector. 
-          ARIS-ER will take place at UC Davis and begin taking data in 2021.
+          <a href="https://arxiv.org/abs/1801.06653" onclick="gtag('event', 'click', {'event_category':'external', 'event_label':'https://arxiv.org/abs/1801.06653'});">ARIS experiment</a>
+          measured the scintillation and ionization response of LAr to impinging neutrons of known energy.
+          In a continuing effort to study the response of liquid argon at low energies, the proposed Argon Recoil Ionization and Scintillation from Electron Recoils (ARIS-ER) experiment will measure the response of liquid argon to monoenergetic gammas which Compton scatter in the detector. ARIS-ER will take place at UC Davis and begin taking data in 2021.
+          --->
         </p>
-        <p>
-          For ARIS-ER, I am involved in the experimental design, data acquisition (DAQ) system development, hardware development, and detector commissioning.
-          Once data is taken, I will also be involved in the ARIS-ER analysis.
-        </p>
-        
+
       </div>
     </div>
-    
-    
+
+
     {% comment %}
     <!-- Research Grid -->
     <div class="row justify-content-around" style="margin-top:20px;">
-      {% for sp in site.data.sitetext.subpages %}
-        {% if sp.section != "research" %}
-          {% continue %}
-        {% endif %}
-      
-        <div class="col-md-4 col-sm-6 subpage-item">
-          <a class="subpage-link" data-toggle="modal" href="#{{ sp.subsection }}">
-            <div class="subpage-hover">
-              <div class="subpage-hover-content">
-                <i class="{{ site.data.style.subpage-icon | default: "fas fa-plus fa-3x" }}"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="{{ sp.thumbnail }}" alt="">
-          </a>
-          <div class="subpage-caption">
-            <h4>{{ sp.title }}</h4>
-            <p class="text-muted">{{ sp.subtitle }}</p>
-          </div>
-        </div>
-      {% endfor %}
+    {% for sp in site.data.sitetext.subpages %}
+    {% if sp.section != "research" %}
+    {% continue %}
+    {% endif %}
+
+    <div class="col-md-4 col-sm-6 subpage-item">
+    <a class="subpage-link" data-toggle="modal" href="#{{ sp.subsection }}">
+    <div class="subpage-hover">
+    <div class="subpage-hover-content">
+    <i class="{{ site.data.style.subpage-icon | default: "fas fa-plus fa-3x" }}"></i>
+    </div>
+    </div>
+    <img class="img-fluid" src="{{ sp.thumbnail }}" alt="">
+    </a>
+    <div class="subpage-caption">
+    <h4>{{ sp.title }}</h4>
+    <p class="text-muted">{{ sp.subtitle }}</p>
+    </div>
+    </div>
+    {% endfor %}
     </div>
     <!-- End Research Grid -->
-    {% endcomment %}
-
-    
-  </div>
+    {% endcomment %}</div>
 </section>
 {% include_relative _pages/modals.html %}
 <!-- End Research -->

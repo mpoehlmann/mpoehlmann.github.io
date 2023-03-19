@@ -1,0 +1,47 @@
+<section class="page-section" id="publications">
+  <div class="container-fluid">
+    <h2 class="section-heading text-center">Publications</h2>
+
+    <p class="text-center">
+      My Orcid iD is
+      <a href="https://orcid.org/0000-0002-7131-8433">0000-0002-7131-8433</a>
+    </p>
+
+    <div class="row mx-5">
+      <div class="col-lg-6">
+        <!-- Publications -->
+        <div class="row pub-section">
+          <h2 class="pub-heading">Papers</h2>
+          {%- for pub in site.data.sitetext.publications.papers -%}
+            <div class="pub-block" id="{{pub.tag}}">
+              <p class="pub-citation">{{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+              <p class="pub-desc">{{ pub.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <!-- Book chapters -->
+        <div class="row pub-section">
+          <h2 class="pub-heading">Book chapters</h2>
+          {%- for pub in site.data.sitetext.publications.chapters -%}
+            <div class="pub-block" id="{{pub.tag}}">
+              <p class="pub-citation">{{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+              <p class="pub-desc">{{ pub.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            </div>
+          {%- endfor -%}
+        </div>
+        <!-- Presentations -->
+        <div class="row pub-section">
+          <h2 class="pub-heading">Presentations</h2>
+          {%- for pub in site.data.sitetext.publications.presentations -%}
+            <div class="pub-block" id="{{pub.tag}}">
+              <p class="pub-citation">{{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+              <p class="pub-desc">{{ pub.description | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

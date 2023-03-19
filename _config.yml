@@ -1,22 +1,21 @@
 # Site settings
 title: Michael Poehlmann
 description: > # this means to ignore newlines until "baseurl:"
-  Michael Poehlmann's personal website. 
+  Michael Poehlmann's personal website.
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Meta settings
-# email: dm.poehlmann@gmail.com
-email: poehlmann@ucdavis.edu
+email: dm.poehlmann@gmail.com
+# email: poehlmann@ucdavis.edu
 author: Michael Poehlmann
-logo: # Optional, defaults to site title
-  # path: assets\img\clients\creative-market.jpg
-  # height: 60 # Height in px, defaults to 52px
-
+# logo:   # Optional, defaults to site title
+# path: assets\img\clients\creative-market.jpg
+# height: 60 # Height in px, defaults to 52px
 
 analytics:
-  google: 'UA-172415369-1' # Google Analytics tracking code here
+  google: "UA-172415369-1" # Google Analytics tracking code here
 
 collections:
   portfolio:
