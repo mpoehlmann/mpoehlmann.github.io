@@ -41,3 +41,4 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "components/footer";
 @import "components/navbar";
 @import "components/pubs";
+@import "components/section";

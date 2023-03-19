@@ -34,6 +34,7 @@ h5 {
   }
 }
 
+//! Images
 img::selection {
   background: transparent;
 }
@@ -41,4 +42,15 @@ img::selection {
 .img-caption {
   margin-top: 10px;
   font-size: 14px;
+}
+
+.img-bordered {
+  text-align: center;
+  img {
+    // width: 500px;
+    // height: 500px
+    max-width: 400px;
+    width: 100%;
+    border: 4px solid $secondary-bg;
+  }
 }

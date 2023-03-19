@@ -1,6 +1,6 @@
 navbar:
-  - title: about
-    url: "/about"
+  - title: home
+    url: "/"
   - title: research
     url: "/research"
   - title: publications
