@@ -1,55 +1,55 @@
 papers:
   - tag: AgnesSearchDarkMatter2023
     citation: >-
-      The DarkSide-50 Collaboration, “Search for dark matter particle interactions with electron final states with DarkSide-50,” Physical Review Letters 130, 101002 (2023).<br/>
+      **The DarkSide-50 Collaboration**, “Search for dark matter particle interactions with electron final states with DarkSide-50,” Physical Review Letters 130, 101002 (2023).<br/>
       DOI: [10.1103/PhysRevLett.130.101002](https://www.doi.org/10.1103/PhysRevLett.130.101002)
     # description: >-
     #   TODO
 
   - tag: AgnesSearchLowmassDark2023
     citation: >-
-      The DarkSide-50 Collaboration, “Search for low-mass dark matter WIMPs with 12 ton-day exposure of DarkSide-50,” Physical Review D 107, 063001 (2023).<br/>
+      **The DarkSide-50 Collaboration**, “Search for low-mass dark matter WIMPs with 12 ton-day exposure of DarkSide-50,” Physical Review D 107, 063001 (2023).<br/>
       DOI: [10.1103/PhysRevD.107.063001](https://www.doi.org/10.1103/PhysRevD.107.063001)
     # description: >-
     #   TODO
 
   - tag: AgnesSearchDarkMatterNucleon2023
     citation: >-
-      The DarkSide-50 Collaboration, "Search for dark matter-nucleon interactions via Migdal effect with DarkSide-50," accepted by Physical Review Letters 130, 101001 (2023).<br/>
+      **The DarkSide-50 Collaboration**, "Search for dark matter-nucleon interactions via Migdal effect with DarkSide-50," accepted by Physical Review Letters 130, 101001 (2023).<br/>
       DOI: [10.1103/PhysRevLett.130.101001](https://www.doi.org/10.1103/PhysRevLett.130.101001)
     # description: >-
     #   TODO
 
   - tag: AgnesSearchLowMass2023
     citation: >-
-      The DarkSide-50 Collaboration, “Search for low mass dark matter in DarkSide-50: the Bayesian network approach,” submitted to European Physical Journal C (2023).<br/>
+      **The DarkSide-50 Collaboration**, “Search for low mass dark matter in DarkSide-50: the Bayesian network approach,” submitted to European Physical Journal C (2023).<br/>
       DOI: [10.48550/arXiv.2302.01830](https://www.doi.org/10.48550/arXiv.2302.01830)
     # description: >-
     #   TODO
 
   - tag:
     citation: >-
-      The DarkSide-20k Collaboration, "Sensitivity of the DarkSide-20k experiment to low-mass dark matter candidates," manuscript in preparation (2023).
+      **The DarkSide-20k Collaboration**, "Sensitivity of the DarkSide-20k experiment to low-mass dark matter candidates," manuscript in preparation (2023).
     # description: >-
     #   I am the primary author of this paper and I have led the low-mass sensitivity calculations effort.
 
   - tag: DarkSide20kCollaborationStudyCosmogenicActivation2023
     citation: >-
-      The DarkSide-20k Collaboration, “Study on cosmogenic activation above ground for the DarkSide-20k project,” submitted to Astroparticle Physics (2023).<br/>
+      **The DarkSide-20k Collaboration**, “Study on cosmogenic activation above ground for the DarkSide-20k project,” submitted to Astroparticle Physics (2023).<br/>
       DOI: [10.48550/arXiv.2301.12970](https://www.doi.org/10.48550/arXiv.2301.12970)
     # description: >-
     #   TODO
 
   - tag: DarkSide20kCollaborationMeasurementIsotopicSeparation2023
     citation: >-
-      The DarkSide-20k Collaboration, “Measurement of isotopic separation of argon with the prototype of the cryogenic distillation plant Aria for dark matter searches,” submitted to European Physical Journal C (2023).<br/>
+      **The DarkSide-20k Collaboration**, “Measurement of isotopic separation of argon with the prototype of the cryogenic distillation plant Aria for dark matter searches,” submitted to European Physical Journal C (2023).<br/>
       DOI: [10.48550/arXiv.2301.09639](https://www.doi.org/10.48550/arXiv.2301.09639)
     # description: >-
     #   TODO
 
   - tag: DarkSideColloaborationSensitivityProjectionsDarkSideLowMass2022
     citation: >-
-      The DarkSide-20k Collaboration, “Sensitivity projections for a dual-phase argon TPC optimized for light dark matter searches through the ionization channel,” submitted to Physical Review Letters (2023).<br/>
+      **The DarkSide-20k Collaboration**, “Sensitivity projections for a dual-phase argon TPC optimized for light dark matter searches through the ionization channel,” submitted to Physical Review Letters (2023).<br/>
       DOI: [10.48550/arXiv.2209.01177](https://www.doi.org/10.48550/arXiv.2209.01177)
     # description: >-
     #   TODO

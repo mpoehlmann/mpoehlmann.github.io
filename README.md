@@ -162,6 +162,11 @@ The `default.html` file contains the following lines, which includes the `head.h
 
 
 ## TODO
+- [ ] Column wrapping for bootstrap
+- [ ] Make skills and expertise narrower
+- [ ] Header bar enlarge on scroll
+- [ ] Add gtag to publications page DOI
+
 - [ ] citations: https://pages.lip6.fr/Pascal.Poizat/blog/posts/2016/02/01/jekyll-and-bibtex/
 - [ ] Deploy: https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
 - [ ] Some cookies are misusing the recommended “SameSite“ attribute

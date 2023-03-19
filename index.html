@@ -3,15 +3,22 @@ layout: page
 ---
 
 <div class="container-lg" role="main">
-  <section class="page-section" id="about">
-
-    <h2 class="section-heading text-center">about.</h2>
+  <section class="page-section">
+    <h2 class="section-heading text-center">About.</h2>
 
     <h3 class="section-subheading text-center">
       I'm passionate about research and driven by curiosity.
     </h3>
 
-    <div class="row mx-auto flex-nowrap">
+    <div class="row">
+      <!-- mx-auto flex-nowrap -->
+
+      <div class="col-5 img-bordered">
+        <img
+          class="img-fluid rounded-circle"
+          src="{{'assets/img/profile.jpg' | prepend: site.baseurl}}"
+          alt="">
+      </div>
 
       <div class="col-7 p-4 m-0 section-bg-secondary-light">
         <p>
@@ -19,7 +26,7 @@ layout: page
           I am a PhD candidate at the University of California, Davis studying high energy experimental physics. I work with
           <a href="http://pantic.physics.ucdavis.edu" onclick="gtag('event', 'click', {'event_category':'external', 'event_label':'http://pantic.physics.ucdavis.edu'});">Prof. Emilija Pantic</a>
           on liquid argon-based rare event searches.
-          Specifically, I specialize in simulations and data analysis for the
+          Specifically, I specialize in data analysis and simulations for the
           <a href="http://darkside.lngs.infn.it" onclick="gtag('event', 'click', {'event_category':'external', 'event_label':'http://darkside.lngs.infn.it'});">DarkSide Collaboration</a>,
           working towards the discovery of dark matter.
         </p>
@@ -43,13 +50,77 @@ layout: page
         </p>
       </div>
 
-      <div class="col-md-5 img-bordered">
-        <img
-          class="img-fluid rounded-circle"
-          src="{{'assets/img/profile.jpg' | prepend: site.baseurl}}"
-          alt="">
-      </div>
+    </div>
 
+    <!-- <div class="mx-auto" style="height: 3em;"></div> -->
+  </section>
+
+  <section class="page-section">
+    <h2 class="section-heading text-center">Education.</h2>
+
+    <div class="row">
+      <div class="col-8">
+        <b>Ph.D. in Physics</b>, University of California, Davis<br/>
+        Designated emphasis in Nuclear Science
+      </div>
+      <div class="col-4">
+        Expected Graduation June 2023
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8">
+        <b>M.S. in Physics</b>, University of California, Davis
+      </div>
+      <div class="col-4">
+        Sept 2018 - Dec 2019
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-8">
+        <b>Honors B.S. in Physics</b>, University of Minnesota, Twin Cities
+      </div>
+      <div class="col-4">
+        Sept 2014 - May 2018
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <h2 class="section-heading text-center">Skills and expertise.</h2>
+    <div class="row">
+      <div class="col-6 ml-5">
+        <ul>
+          <li>
+            <b>Programming</b>: Python, C++, SQL, Julia, Bash, Git
+          </li>
+          <li>
+            <b>Supervised learning</b>: decision trees, linear regression</li>
+          <li>
+            <b>Unsupervised learning</b>: K-means clustering, DBSCAN clustering</li>
+          <li>
+            <b>Reinforcement learning</b>: deep Q-networks (DQNs)</li>
+          <li>
+            <b>Neural networks</b>: convolutional neural networks (CNNs)
+          </li>
+        </ul>
+      </div>
+      <div class="col-6 mr-5">
+        <li>
+          <b>Statistical analysis</b>: Bayesian and frequentist methods
+        </li>
+        <li>
+          <b>Data visualization</b>: Matplotlib, Plotly, Dash, Bokeh
+        </li>
+        <li>
+          <b>Physics simulations</b>: Monte Carlo (MC) simulations, optical simulations, Geant4
+        </li>
+        <li>
+          <b>Parallel and distributed computing</b>: Dask
+        </li>
+        <li>
+          <b>Other software tools & packages</b>: SciKit-Learn, NumPy, SciPy, Pandas, Numba, MySQL, Jupyter Notebook, SolidWorks, ROOT, NI LabVIEW
+        </li>
+      </div>
     </div>
 
   </section>

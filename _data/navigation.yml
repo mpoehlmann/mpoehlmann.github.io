@@ -5,10 +5,12 @@ navbar:
     url: "/research"
   - title: publications
     url: "/pubs"
-  - title: outreach
-    url: "/outreach"
+  # - title: outreach
+  #   url: "/outreach"
   - title: beyond physics
     url: "/beyondphysics"
+  - title: cv
+    url: "/cv"
 
 footer:
   legal: "privacy policy."

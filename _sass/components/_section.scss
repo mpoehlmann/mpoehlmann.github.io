@@ -1,8 +1,9 @@
 /**
  * Page sections
  */
- .page-section {
-  padding: 50px 0; // padding: 100px 0;
+.page-section {
+  padding: 25px 0 0; // Match with footer margin
+  // padding: 50px 0; // padding: 100px 0;
   h2.section-heading {
     // color: $dark-gray;
     color: $black;
@@ -12,10 +13,10 @@
     margin-bottom: 15px;
   }
   .section-subheading {
-    color: $tertiary; //$dark-gray;
+    color: $tertiary; // $dark-gray;
     font-weight: 400;
     font-style: italic;
-    margin-bottom: 30px; //75px;
+    margin-bottom: 15px; // 75px;
     text-transform: none;
     // @include serif-font;
     @include heading-font;
@@ -33,7 +34,7 @@
 }
 
 .section-bg-primary-light {
-  background-color: $primary-bg; //lighten($primary, 35%);
+  background-color: $primary-bg; // lighten($primary, 35%);
   // background-blend-mode: lighten;
 }
 
@@ -43,7 +44,7 @@
 }
 
 .section-bg-secondary-light {
-  background-color: $secondary-bg; //lighten($secondary, 20%);
+  background-color: $secondary-bg; // lighten($secondary, 20%);
   background-blend-mode: lighten;
 }
 
@@ -63,7 +64,7 @@
 
 .white-link {
   color: $white;
-  &:hover {
+   &:hover {
     color: $white;
     text-decoration: underline;
   }

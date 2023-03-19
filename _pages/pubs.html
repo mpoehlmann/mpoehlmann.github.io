@@ -4,11 +4,8 @@ title: publications.
 ---
 
 <div class="container-lg">
-  <section class="page-section" id="about">
-
-    <h2 class="section-heading text-center">
-      publications.
-    </h2>
+  <section class="page-section">
+    <h2 class="section-heading text-center">{{ page.title | capitalize }}</h2>
 
     <!-- <h3 class="section-subheading text-center">
     I'm passionate about research and driven by curiosity.
@@ -22,7 +19,7 @@ title: publications.
       <div class="col-lg-6">
         <!-- Publications -->
         <div class="row pub-section">
-          <h2 class="pub-heading">papers.</h2>
+          <h2 class="pub-heading">Papers</h2>
           {%- for pub in site.data.references.papers -%}
             <div class="pub-block" id="{{pub.tag}}">
               <p class="pub-citation">{{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
@@ -34,7 +31,7 @@ title: publications.
       <div class="col-lg-6">
         <!-- Book chapters -->
         <div class="row pub-section">
-          <h2 class="pub-heading">book chapters.</h2>
+          <h2 class="pub-heading">Book chapters</h2>
           {%- for pub in site.data.references.chapters -%}
             <div class="pub-block" id="{{pub.tag}}">
               <p class="pub-citation">{{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
@@ -44,7 +41,7 @@ title: publications.
         </div>
         <!-- Presentations -->
         <div class="row pub-section">
-          <h2 class="pub-heading">presentations.</h2>
+          <h2 class="pub-heading">Presentations</h2>
           {%- for pub in site.data.references.presentations -%}
             <div class="pub-block" id="{{pub.tag}}">
               <p class="pub-citation">{{ pub.citation | markdownify | remove: '<p>' | remove: '</p>' }}</p>
