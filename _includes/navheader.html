@@ -38,9 +38,12 @@
 
 
   <!-- Header -->
+  <header class="masthead-empty">
+
+  </header>
+  {%- comment -%}
   <header class="masthead">
     <div class="container">
-    {% comment %}
       <div class="intro-text">
         {%- if site.data.sitetext.header.title -%}
           <div class="intro-heading">{{ site.data.sitetext.header.title | markdownify }}</div>
@@ -53,8 +56,8 @@
             {{ site.data.sitetext.header.button }}
           </a>
         {%- endif -%}
+        </div>
       </div>
-    {% endcomment %}
-    </div>
-  </header>
+    </header>
+  {%- endcomment -%}
   <!-- End Header -->

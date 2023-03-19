@@ -41,6 +41,7 @@ $header-image: "{{ site.data.style.header-image }}";
 // Components
 @import "components/buttons.scss";
 @import "components/navbar.scss";
+@import "components/pubs.scss";
 @import "components/client-scroll.scss";
 
 

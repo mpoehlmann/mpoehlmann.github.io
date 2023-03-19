@@ -5,11 +5,14 @@ nav:
   - title: "research."
     section: research
 
-  - title: "outreach."
-    section: outreach
+  # - title: "outreach."
+  #   section: outreach
 
-  - title: "beyond physics."
-    section: beyondphysics
+  # - title: "beyond physics."
+  #   section: beyondphysics
+
+  - title: "publications."
+    section: publications
 
   - title: "cv."
     section: cv
