@@ -6,29 +6,29 @@ header:
   button: ABOUT ME
   buttonlink: "#about"
 
-about:
-  title: "about."
-  section: about
-  
-research:
-  title: "research."
-  section: research
-  
-outreach:
-  title: "outreach."
-  section: outreach
+# about:
+#   title: "about."
+#   section: about
 
-beyondphysics:
-  title: "beyond physics."
-  section: beyondphysics
+# research:
+#   title: "research."
+#   section: research
 
-cv:
-  title: "curriculum vitae."
-  section: cv
-  
-contact:
-  title: "contact."
-  section: contact
+# outreach:
+#   title: "outreach."
+#   section: outreach
+
+# beyondphysics:
+#   title: "beyond physics."
+#   section: beyondphysics
+
+# cv:
+#   title: "curriculum vitae."
+#   section: cv
+
+# contact:
+#   title: "contact."
+#   section: contact
 
 footer:
   legal: "privacy policy."
@@ -39,21 +39,20 @@ footer:
       icon: fab fa-linkedin-in
     - url: https://orcid.org/0000-0002-7131-8433
       icon: fab fa-orcid
-      
-      
+
 subpages:
   # - title: "current projects."
   #   subtitle: "A summary of my current research projects."
   #   section: research
   #   subsection: currentprojects
   #   thumbnail: "../assets/img/michael_ariser_poster.jpg"
-  
+
   # - title: "previous work."
   #   subtitle: "An overview of my past research activities."
   #   section: research
   #   subsection: previouswork
   #   thumbnail: "../assets/img/michael_ariser_poster.jpg"
-    
+
   # - title: "two-phase TPCs."
   #   subtitle: "An introduction to two-phase argon time projection chambers."
   #   # section: adfas
